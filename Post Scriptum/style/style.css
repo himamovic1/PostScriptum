@@ -1,0 +1,159 @@
+/* Definitions of grid system and common elements */
+
+/* Grid system */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+[class*="cspan-"] {
+    float: left;
+    padding: 1em;
+}
+
+.row { 
+	width: 100%; 
+	float: left; 
+	min-height: 1px;
+	display: block;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* Fonts import */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700|Rubik:300,300i,400,400i,500,700');
+
+/* Common elements */
+html, body {
+	height: 100%;
+	font-family: 'Rubik', sans-serif;
+	background-color: #eee;
+}
+
+a {
+	text-decoration: none;
+	color: #888;
+}
+
+/* TODO: Article container styles */
+.article-big {
+	
+}
+
+.article-med {
+
+}
+
+.article-sml {
+
+}
+
+.article-wide {
+
+}
+
+/* Title styles */
+.title {
+	letter-spacing: 0.01em;
+	line-height: 1.2em;
+	color: #393939;
+	font-weight: 500;
+}
+
+.title-white {
+	color: #eee;
+}
+
+/* Paragraph styles */
+p {
+	font-weight: 300;
+}
+
+.uppercase { text-transform: uppercase; }
+
+/* TODO: Quote style */
+
+/* TODO: Button styles */
+
+/* Navigation bar */
+#navBar {
+	width: 100%;
+	background: #fafafa;
+	padding: 1em;
+	margin-bottom: 1em;
+
+	box-shadow: 0px 3px 4px #ccc;
+	-moz-box-shadow: 0px 3px 4px #ccc;
+	-webkit-box-shadow: 0px 3px 4px #ccc;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=270, Color='#cccccc')";
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=270, Color='#cccccc');
+}
+
+nav ul {
+	list-style-type: none;
+	text-align: center;
+	overflow: hidden;
+}
+
+.navBarContent {
+	display: none;
+	text-align: left;
+	margin-top: 0.5em;
+	padding: 1em 0;
+	font-size: 0.875em; 
+}
+
+/* Navigation bar extras */
+.show { display: block; }
+.active { color: #606060; }
+
+#logo { 
+	font-family: 'Playfair Display', serif; 
+	font-weight: 700; 
+	color: #ea4242; 
+}
+
+#menuToggleButton {	
+	float: left; 
+	width: 1.2em; 
+	height: 1.2em; 
+}
+
+/* Banner */
+#banner {
+	width: 100%;
+	height: 7em;
+	background-color: #4f843e;
+	text-align: center;
+}
+
+@media all and (min-width: 768px) {
+	.cspan-1 {width: 8.33%;}
+	.cspan-2 {width: 16.66%;}
+	.cspan-3 {width: 25%;}
+	.cspan-4 {width: 33.33%;}
+	.cspan-5 {width: 41.66%;}
+	.cspan-6 {width: 50%;}
+	.cspan-7 {width: 58.33%;}
+	.cspan-8 {width: 66.66%;}
+	.cspan-9 {width: 75%;}
+	.cspan-10 {width: 83.33%;}
+	.cspan-11 {width: 91.66%;}
+	.cspan-12 {width: 100%;}
+
+	#menuToggleButton { display: none; }
+	#logo { display: inline; float: left; padding-left: 1em; }
+	.navBarContent { padding: 0 0 0 1.5em; margin: 0; display: inline; float: left; }
+}
+
+/* TODO: Consider adding another size  
+@media all and (min-width: 320px) {
+
+}
+*/
