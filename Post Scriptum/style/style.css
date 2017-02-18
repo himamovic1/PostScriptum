@@ -1,3 +1,7 @@
+/* Reset User Agent Stylesheet */
+@import url('reset.css');
+
+
 /* Definitions of grid system and common elements */
 
 /* Grid system */
@@ -8,15 +12,16 @@
 }
 
 [class*="cspan-"] {
+    position: relative;
     float: left;
-    padding: 1em;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
 }
 
 .row { 
-	width: 100%; 
-	float: left; 
-	min-height: 1px;
 	display: block;
+	min-height: 1px;
 }
 
 .row::after {
@@ -25,6 +30,30 @@
     display: table;
 }
 
+.noDisp { display: none; }
+
+.container {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
 
 /* Fonts import */
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:700|Rubik:300,300i,400,400i,500,700');
@@ -41,29 +70,91 @@ a {
 	color: #888;
 }
 
+small {
+	font-size: 0.8em;
+}
+
+/* Category colors */
+.world_region {
+	color: #ea4242;
+}
+
+.business {
+	color: #ea9942;
+}
+
+.sport {
+	color: #71bc1f;
+}
+
+.culture {
+	color: #76a1f9;
+}
+
+.lifestyle {
+	color: #bc76f9;
+}
+
+.column {
+	color: #42adea;
+}
+
+.category-filled {
+
+}
+
+.category-outlined {
+	border: 1px solid;
+	border-radius: 2em;
+	text-align: center;
+	padding: 0 0.6em;
+}
+
 /* TODO: Article container styles */
 .article-big {
 	
 }
 
-.article-med {
-
+.article-med a {
+	margin-bottom: 1.5em;
 }
 
-.article-sml {
-
+.article-sml a {
+	margin-bottom: 2em;
 }
 
 .article-wide {
 
 }
 
+/* Article image containers */
+.image-container-main {
+
+}
+
+.image-container-big {
+	
+}
+
+.image-container-sml {
+	
+}
+
+.image-container-big img, .image-container-sml img {
+	max-width: 100%; 
+	max-height: 100%;
+	min-width: 80px;
+	min-height: 80px;
+	object-fit: cover;
+}
+
 /* Title styles */
-.title {
+.page-title {
 	letter-spacing: 0.01em;
-	line-height: 1.2em;
-	color: #393939;
+	color: #eee;
 	font-weight: 500;
+	font-size: 2.5em;
+	text-align: center;
 }
 
 .title-white {
@@ -73,6 +164,7 @@ a {
 /* Paragraph styles */
 p {
 	font-weight: 300;
+	color: #626262;
 }
 
 .uppercase { text-transform: uppercase; }
@@ -81,18 +173,45 @@ p {
 
 /* TODO: Button styles */
 
+/* Top bar */
+#topBar { 
+	padding: 0.35em 8.33%; 
+	background-color: #4f843e; 
+}
+
+#topBar li {
+	display: inline;
+	padding-right: 1.5em;
+	font-size: 0.875em; 
+	float: left;
+}
+
+#topBar li:last-child {
+	float: right;
+}
+
+#topBarLogo { 
+	font-family: 'Playfair Display', serif; 
+	font-weight: 700;  
+	margin: 1.3em;
+}
+
 /* Navigation bar */
 #navBar {
 	width: 100%;
 	background: #fafafa;
-	padding: 1em;
+	padding: 1em 0;
 	margin-bottom: 1em;
 
 	box-shadow: 0px 3px 4px #ccc;
 	-moz-box-shadow: 0px 3px 4px #ccc;
 	-webkit-box-shadow: 0px 3px 4px #ccc;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=270, Color='#cccccc')";
-	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=270, Color='#cccccc');
+	filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=270, Color='#cccccc')";
+}
+
+ul {
+	list-style-type: none;
 }
 
 nav ul {
@@ -102,18 +221,31 @@ nav ul {
 }
 
 .navBarContent {
+	margin: 0;
+	padding: 0;
+	width: 100%;
 	display: none;
 	text-align: left;
-	margin-top: 0.5em;
+	margin-top: 0.5em;	
+}
+
+.navBarContent a {
+	margin: 0;
 	padding: 1em 0;
+	width: 100%;
+	display: block;
 	font-size: 0.875em; 
+}
+
+.navBarContent a:hover, .navBarContent a:active {
+	background-color: #e7e7e7;
 }
 
 /* Navigation bar extras */
 .show { display: block; }
 .active { color: #606060; }
 
-#logo { 
+.logo { 
 	font-family: 'Playfair Display', serif; 
 	font-weight: 700; 
 	color: #ea4242; 
@@ -130,7 +262,35 @@ nav ul {
 	width: 100%;
 	height: 7em;
 	background-color: #4f843e;
-	text-align: center;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* ------------------------------------------->
+		Footer
+/* -------------------------------------------*/
+#pageFooter {
+	clear: both;
+	width: 100%;
+	height: auto;
+	background-color: #fafafa;
+
+	box-shadow: 0px -3px 4px #ccc;
+	-moz-box-shadow: 0px -3px 4px #ccc;
+	-webkit-box-shadow: 0px -3px 4px #ccc;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='#cccccc')";
+	filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='#cccccc')";
+}
+
+#pageFooter ul { width: 100%; padding: 1em 0; }
+
+#pageFooter ul li {
+	clear: both;
+	float: left; 
+	display: block;
+	padding-right: 1em;
 }
 
 @media all and (min-width: 768px) {
@@ -147,9 +307,15 @@ nav ul {
 	.cspan-11 {width: 91.66%;}
 	.cspan-12 {width: 100%;}
 
+	.noDisp { display: unset; }
+
+	#topBar { display: block; }
 	#menuToggleButton { display: none; }
-	#logo { display: inline; float: left; padding-left: 1em; }
-	.navBarContent { padding: 0 0 0 1.5em; margin: 0; display: inline; float: left; }
+	.logo { display: inline; float: left; padding-left: 1em; }
+	.navBarContent { padding: 0 0 0 1.5em; margin: 0; width: auto; display: inline; float: left; }
+	.navBarContent a { padding: 0; }
+	.navBarContent a:hover, .navBarContent a:active { background-color: transparent; }
+	#pageFooter ul li { clear: none; display: inline; }
 }
 
 /* TODO: Consider adding another size  
