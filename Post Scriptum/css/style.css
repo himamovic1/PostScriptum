@@ -43,9 +43,7 @@ p {
 	letter-spacing: 0.3px;
 }
 
-/* ---------------------------------------------- */
-/* --------------- Category Colors -------------- */
-/* ---------------------------------------------- */
+/* Category colors */
 .world_region {
 	color: #ea4242;
 }
@@ -79,18 +77,7 @@ p {
 	border: 1px solid;
 	border-radius: 2em;
 	text-align: center;
-<<<<<<< HEAD:Post Scriptum/css/style.css
 	display: table-cell;
-=======
-	padding: 0 0.6em;
-}
-
-/* ---------------------------------------------- */
-/* ---------- Article Container Styles ---------- */
-/* ---------------------------------------------- */
-.article-big {
-	
->>>>>>> origin/master:Post Scriptum/style/style.css
 }
 
 .category-header-container {
@@ -220,18 +207,7 @@ p {
 	margin: 1.3em;
 }
 
-<<<<<<< HEAD:Post Scriptum/css/style.css
 /* Navigation bar */
-=======
-/* ---------------------------------------------- */
-/* --------------- Navigation Bar --------------- */
-/* ---------------------------------------------- */
-#navBar {
-	width: 100%;
-	background: #fafafa;
-	padding: 1em 0;
-	margin-bottom: 1em;
->>>>>>> origin/master:Post Scriptum/style/style.css
 
 
 
@@ -246,13 +222,7 @@ p {
 	justify-content: center;
 }
 
-<<<<<<< HEAD:Post Scriptum/css/style.css
 /* Footer */
-=======
-/* ---------------------------------------------- */
-/* ------------------- Footer ------------------- */
-/* ---------------------------------------------- */
->>>>>>> origin/master:Post Scriptum/style/style.css
 #pageFooter {
 	width: 100%;
 	height: auto;
@@ -274,28 +244,9 @@ p {
 	padding-right: 1em;
 }
 
-<<<<<<< HEAD:Post Scriptum/css/style.css
 /* TODO: Quote style */
 
 /* TODO: Button styles */
-=======
-/* ---------------------------------------------- */
-/* --------------- Desktop Styles --------------- */
-/* ---------------------------------------------- */
-@media all and (min-width: 768px) {
-	.cspan-1 {width: 8.33%;}
-	.cspan-2 {width: 16.66%;}
-	.cspan-3 {width: 25%;}
-	.cspan-4 {width: 33.33%;}
-	.cspan-5 {width: 41.66%;}
-	.cspan-6 {width: 50%;}
-	.cspan-7 {width: 58.33%;}
-	.cspan-8 {width: 66.66%;}
-	.cspan-9 {width: 75%;}
-	.cspan-10 {width: 83.33%;}
-	.cspan-11 {width: 91.66%;}
-	.cspan-12 {width: 100%;}
->>>>>>> origin/master:Post Scriptum/style/style.css
 
 @media all and (min-width: 992px) {
 
