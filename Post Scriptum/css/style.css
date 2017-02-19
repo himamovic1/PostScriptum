@@ -1,0 +1,260 @@
+/* Reset User Agent Stylesheet
+@import url('reset.css');
+ */
+
+/* Definitions of grid system and common elements */
+
+/* Grid system */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Fonts import */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700|Rubik:300,300i,400,400i,500,700');
+
+/* Common elements */
+html, body {
+	height: 100%;
+	font-family: 'Rubik', sans-serif;
+	background-color: #eee;
+}
+
+a {
+	text-decoration: none;
+	color: #888;
+}
+
+small {
+	font-size: 0.7em;
+	margin: 0.1em 0.6em 0.15em 0.6em;
+}
+
+ul {
+	list-style-type: none;
+	overflow: hidden;
+}
+
+p {
+	font-weight: 300;
+	color: #626262;
+	line-height: 1.4em;
+	letter-spacing: 0.3px;
+}
+
+/* Category colors */
+.world_region {
+	color: #ea4242;
+}
+
+.business {
+	color: #ea9942;
+}
+
+.sport {
+	color: #71bc1f;
+}
+
+.culture {
+	color: #76a1f9;
+}
+
+.lifestyle {
+	color: #bc76f9;
+}
+
+.column {
+	color: #42adea;
+}
+
+.category-filled {
+
+}
+
+/* Category tag styles */
+.category-outlined {
+	border: 1px solid;
+	border-radius: 2em;
+	text-align: center;
+	display: table-cell;
+}
+
+.category-header-container {
+	margin-bottom: 0.8em;
+}
+
+.category-header-container ul li {
+	float: right;
+	padding-left: 0.5em;
+}
+
+.category-header-container ul li:first-child {
+	padding-left: 0;
+}
+
+/* Article images */
+.big-image {
+	max-width: 100%; 
+	max-height: 100%;
+	min-width: auto;
+	min-height: 300px;
+	object-fit: cover;
+	margin-bottom: 0.7em;
+}
+
+.md-image {
+	max-width: 100%; 
+	max-height: 100%;
+	min-width: 80px;
+	min-height: 80px;
+	object-fit: cover;
+	margin-bottom: 0.7em;
+}
+
+.article-md a {
+	margin-bottom: 1.5em;
+}
+
+.article-sm a {
+	margin-bottom: 1.5em;
+}
+
+/* Title styles */
+.page-title {
+	letter-spacing: 0.01em;
+	color: #eee;
+	font-weight: 500;
+	font-size: 2.5em;
+	text-align: center;
+}
+
+.title-white {
+	color: #eee;
+}
+
+.big-title-container {
+	padding: 0;
+}
+
+.md-title-container {
+	padding: 0;
+}
+
+.bg-title {
+	font-size: 1.75em;
+	color: #3a3a3a;
+	margin-bottom: 0.5em;
+}
+
+.md-title {
+	font-size: 1em;
+	color: #3a3a3a;
+}
+
+.big-title-container h2, .md-title-container h5 {
+	margin-top: 0.3em;
+}
+
+.time-comments-container { margin-top: 0.7em; }
+
+.time-comments-container li {
+	float: left;
+	padding-right: 1em;
+}
+
+.time-comments-container li p img {
+	margin-right: 0.5em;
+}
+
+.timeIcon {
+	width: 1em;
+	height: 1em;
+	
+}
+.commentIcon {
+	width: 1em;
+	height: 1em;
+}
+
+.small-txt {
+	font-size: 0.8em;
+}
+
+.uppercase { text-transform: uppercase; }
+
+
+/* Top bar */
+#topBar { 
+	padding: 0.35em 8.33%; 
+	background-color: #4f843e; 
+}
+
+#topBar li {
+	display: inline;
+	padding-right: 1.5em;
+	font-size: 0.875em; 
+	float: left;
+}
+
+#topBar li:last-child {
+	float: right;
+}
+
+#topBarLogo { 
+	font-family: 'Playfair Display', serif; 
+	font-weight: 700;  
+	margin: 1.3em;
+}
+
+/* Navigation bar */
+
+
+
+/* Banner */
+#banner {
+	width: 100%;
+	height: 7em;
+	background-color: #4f843e;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Footer */
+#pageFooter {
+	width: 100%;
+	height: auto;
+	background-color: #fafafa;
+
+	box-shadow: 0px -3px 4px #ccc;
+	-moz-box-shadow: 0px -3px 4px #ccc;
+	-webkit-box-shadow: 0px -3px 4px #ccc;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='#cccccc')";
+	filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='#cccccc')";
+}
+
+#pageFooter ul { width: 100%; padding: 1em 0; }
+
+#pageFooter ul li {
+	clear: both;
+	float: left; 
+	display: block;
+	padding-right: 1em;
+}
+
+/* TODO: Quote style */
+
+/* TODO: Button styles */
+
+@media all and (min-width: 992px) {
+
+	#topBar { display: block; }
+	#menuToggleButton { display: none; }
+	.logo { display: inline; float: left; padding-left: 1em; }
+	.navBarContent { padding: 0 0 0 1.5em; margin: 0; width: auto; display: inline; float: left; }
+	.navBarContent a { padding: 0; }
+	.navBarContent a:hover, .navBarContent a:active { background-color: transparent; }
+	#pageFooter ul li { clear: none; display: inline; }
+}

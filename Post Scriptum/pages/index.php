@@ -9,11 +9,11 @@
 
 	<title>Post Scriptum - Pocetna</title>
 
-	<link rel="stylesheet" href="../style/style.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/bootstrap.css">
 </head>
 
 <body>
-
 	<!-- Header -->
 	<header>
 		<!-- Top bar 
@@ -36,87 +36,216 @@
 		</div>
 
 		<!-- Navigation bar -->
-		<nav id="navBar">
-			<div class="container">
-				<ul>
-					<li>
-						<img id="menuToggleButton" src="../icons/menu.svg" alt="Menu" onclick="toggleNavBar()">
-						<a href="index.php" class="logo uppercase">Post Scriptum</a>
-					</li>
-					<li class="navBarContent">
-						<a href="index.php" class="active"> Početna </a>
-					</li>
-					<li class="navBarContent">
-						<a href="top_price.php"> Top priče </a>
-					</li>
-					<li class="navBarContent">
-						<a href="svijet_regija.php"> Svijet/Regija </a>
-					</li>
-					<li class="navBarContent">
-						<a href="biznis.php"> Biznis </a>
-					</li>
-					<li class="navBarContent">
-						<a href="sport.php"> Sport </a>
-					</li>
-					<li class="navBarContent">
-						<a href="kultura.php"> Kultura </a>
-					</li>
-				</ul>
-			</div>	
-		</nav>
+		
 	</header>
 	
 	<!-- Main Content Container -->
 	<div class="container">
-
 		<!-- Top Story Section -->
 
 		<!-- News Section -->
-		<section>
-			<div>Naslov</div>
+		<!-- Category header -->
+		<div class="row">
+			<div class="category-header-container col-md-9 col-sm-7 col-xs-12 world_region clearfix">
+				<ul>
+					<li style="float: left;">Vijesti</li>
+					<li>Politika</li>
+					<li>Crna hronika</li>
+					<li>Svijet</li>
+					<li>BiH</li>
+				</ul>
+				<div style="border-bottom: 1px solid #ccc;"></div>
+			</div>
+			<div class="category-header-container col-md-3 col-sm-5 hidden-xs world_region clearfix">
+				<ul>
+					<li style="float: left;">Najčitanije</li>
+				</ul>
+				<div style="border-bottom: 1px solid #ccc;"></div>
+			</div>
+		</div>
 
+		<section class="row">
 			<!-- Large article -->
-			<article class="cspan-4">
+			<article class="article-big col-md-4 col-sm-7 col-xs-12">
 				<a href="">
-					<div class="image-container-big">
-						<img src="../img/img1.png" alt="Article image" >
-					</div>
+					<img src="../img/img1.png" alt="Article image" class="big-image">
+					
+					<div class="big-title-container">
+						<div class="world_region category-outlined"><small>BiH</small></div>
+						<h2 class="bg-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h2>
+						<p>Organizacioni odbor Diplomatskog bazara 2016 danas je dodijelio 130.000 KM dobrotvornim organizacijama za djecu s potrebama iz Bosne i Hercegovine i to je do sada najveći prikupljeni iznos.</p>
 
-					<span class="world_region category-outlined"><small>BiH</small></span>
-					<h2 class="title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h2>
-					<p>Organizacioni odbor Diplomatskog bazara 2016 danas je dodijelio 130.000 KM dobrotvornim organizacijama za djecu s potrebama iz Bosne i Hercegovine i to je do sada najveći prikupljeni iznos.</p>		
+						<div style="width: 200px; height: 1px; background-color: #ccc; margin-top: 0.7em;"></div>
+
+						<ul class="time-comments-container">
+							<li><p class="small-txt"><img src="../icons/clock.svg" alt="Time icon" class="timeIcon">09.Februar</p class="small-txt"></li>
+							<li><p class="small-txt"><img src="../icons/comment.svg" alt="Comment icon" class="commentIcon">14 Komentara</p class="small-txt"></li>
+						</ul>
+					</div>
 				</a>
 			</article>
 
 			<!-- More news -->
-			<div class="cspan-5">
-				<a href="" class="row">
-					<div class="image-container-sml cspan-3">
-						<img src="../img/img1.png" alt="Article image" >
-					</div>
-					<div class="cspan-9">
-						<span class="world_region category-outlined"><small>BiH</small></span>
-						<h5 class="title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h5>
+			<div class="article-md col-md-5 col-sm-5 col-xs-12">
+				<a href="">
+					<div class="row">
+						<div class="col-md-3  col-xs-5">
+							<img src="../img/img1.png" alt="Article image" class="md-image" >
+						</div>
+						<div class="col-md-9  col-xs-7">
+							<div class="world_region category-outlined"><small>BiH</small></div>
+							<h5 class="md-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h5>
+							
+							<ul class="time-comments-container">
+								<li><p class="small-txt"><img src="../icons/clock.svg" alt="Time icon" class="timeIcon">09.Februar</p class="small-txt"></li>
+								<li><p class="small-txt"><img src="../icons/comment.svg" alt="Comment icon" class="commentIcon">14 Komentara</p class="small-txt"></li>
+							</ul>
+						</div>
 					</div>
 				</a>
 
-				<a href="" class="row">
-					<div class="image-container-sml cspan-3">
-						<img src="../img/img1.png" alt="Article image" >
+				<a href="">
+					<div class="row">
+						<div class="col-md-3  col-xs-5">
+							<img src="../img/img1.png" alt="Article image" class="md-image" >
+						</div>
+						<div class="col-md-9  col-xs-7">
+							<div class="world_region category-outlined"><small>BiH</small></div>
+							<h5 class="md-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h5>
+							
+							<ul class="time-comments-container">
+								<li><p class="small-txt"><img src="../icons/clock.svg" alt="Time icon" class="timeIcon">09.Februar</p class="small-txt"></li>
+								<li><p class="small-txt"><img src="../icons/comment.svg" alt="Comment icon" class="commentIcon">14 Komentara</p class="small-txt"></li>
+							</ul>
+						</div>
 					</div>
-					<div class="cspan-9">
-						<span class="world_region category-outlined"><small>BiH</small></span>
-						<h5 class="title">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h5>
+				</a>
+
+				<a href="">
+					<div class="row">
+						<div class="col-md-3  col-xs-5">
+							<img src="../img/img1.png" alt="Article image" class="md-image" >
+						</div>
+						<div class="col-md-9  col-xs-7">
+							<div class="world_region category-outlined"><small>BiH</small></div>
+							<h5 class="md-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h5>
+							
+							<ul class="time-comments-container">
+								<li><p class="small-txt"><img src="../icons/clock.svg" alt="Time icon" class="timeIcon">09.Februar</p class="small-txt"></li>
+								<li><p class="small-txt"><img src="../icons/comment.svg" alt="Comment icon" class="commentIcon">14 Komentara</p class="small-txt"></li>
+							</ul>
+						</div>
 					</div>
+				</a>
+
+				<a href="">
+					<div class="row">
+						<div class="col-md-3  col-xs-5">
+							<img src="../img/img1.png" alt="Article image" class="md-image" >
+						</div>
+						<div class="col-md-9  col-xs-7">
+							<div class="world_region category-outlined"><small>BiH</small></div>
+							<h5 class="md-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h5>
+							
+							<ul class="time-comments-container">
+								<li><p class="small-txt"><img src="../icons/clock.svg" alt="Time icon" class="timeIcon">09.Februar</p class="small-txt"></li>
+								<li><p class="small-txt"><img src="../icons/comment.svg" alt="Comment icon" class="commentIcon">14 Komentara</p class="small-txt"></li>
+							</ul>
+						</div>
+					</div>
+				</a>
+
+				<a href="">
+					<div class="row">
+						<div class="col-md-3  col-xs-5">
+							<img src="../img/img1.png" alt="Article image" class="md-image" >
+						</div>
+						<div class="col-md-9  col-xs-7">
+							<div class="world_region category-outlined"><small>BiH</small></div>
+							<h5 class="md-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h5>
+							
+							<ul class="time-comments-container">
+								<li><p class="small-txt"><img src="../icons/clock.svg" alt="Time icon" class="timeIcon">09.Februar</p class="small-txt"></li>
+								<li><p class="small-txt"><img src="../icons/comment.svg" alt="Comment icon" class="commentIcon">14 Komentara</p class="small-txt"></li>
+							</ul>
+						</div>
+					</div>
+				</a>
+				
+				<a href="">
+					<p style="border:1px solid #ccc; border-radius: 2em; text-align: center; padding: 0.4em 0;">Vidi sve</p>
 				</a>
 			</div>
-
+			
+			
 			<!-- Most read articles -->
-			<div class="cspan-3">
-				<a href="" class="row">
-					<div class="cspan-12">
-						<span class="world_region category-outlined"><small>BiH</small></span>
-						<h5 class="title">Koridor 5C kroz Hercegovinu: Ratnom linijom razgraničenja i protiv interesa stanovništva</h5>
+			<div class="article-sm col-md-3 hidden-sm hidden-xs">
+				<a href="">
+					<div class="row">
+						<div class="col-xs-12 md-title-container">
+							<div class="world_region category-outlined"><small>BiH</small></div>
+							<h5 class="md-title">Koridor 5C kroz Hercegovinu: Ratnom linijom razgraničenja i protiv interesa stanovništva</h5>
+
+							<ul class="time-comments-container">
+								<li><p class="small-txt"><img src="../icons/clock.svg" alt="Time icon" class="timeIcon">09.Februar</p class="small-txt"></li>
+								<li><p class="small-txt"><img src="../icons/comment.svg" alt="Comment icon" class="commentIcon">14 Komentara</p class="small-txt"></li>
+							</ul>
+						</div>
+					</div>
+				</a>
+
+				<a href="">
+					<div class="row">
+						<div class="col-xs-12 md-title-container">
+							<div class="world_region category-outlined"><small>BiH</small></div>
+							<h5 class="md-title">Koridor 5C kroz Hercegovinu: Ratnom linijom razgraničenja i protiv interesa stanovništva</h5>
+
+							<ul class="time-comments-container">
+								<li><p class="small-txt"><img src="../icons/clock.svg" alt="Time icon" class="timeIcon">09.Februar</p class="small-txt"></li>
+								<li><p class="small-txt"><img src="../icons/comment.svg" alt="Comment icon" class="commentIcon">14 Komentara</p class="small-txt"></li>
+							</ul>
+						</div>
+					</div>
+				</a>
+
+				<a href="">
+					<div class="row">
+						<div class="col-xs-12 md-title-container">
+							<div class="world_region category-outlined"><small>BiH</small></div>
+							<h5 class="md-title">Koridor 5C kroz Hercegovinu: Ratnom linijom razgraničenja i protiv interesa stanovništva</h5>
+
+							<ul class="time-comments-container">
+								<li><p class="small-txt"><img src="../icons/clock.svg" alt="Time icon" class="timeIcon">09.Februar</p class="small-txt"></li>
+								<li><p class="small-txt"><img src="../icons/comment.svg" alt="Comment icon" class="commentIcon">14 Komentara</p class="small-txt"></li>
+							</ul>
+						</div>
+					</div>
+				</a>
+
+				<a href="">
+					<div class="row">
+						<div class="col-xs-12 md-title-container">
+							<div class="world_region category-outlined"><small>BiH</small></div>
+							<h5 class="md-title">Koridor 5C kroz Hercegovinu: Ratnom linijom razgraničenja i protiv interesa stanovništva</h5>
+
+							<ul class="time-comments-container">
+								<li><p class="small-txt"><img src="../icons/clock.svg" alt="Time icon" class="timeIcon">09.Februar</p class="small-txt"></li>
+								<li><p class="small-txt"><img src="../icons/comment.svg" alt="Comment icon" class="commentIcon">14 Komentara</p class="small-txt"></li>
+							</ul>
+						</div>
+					</div>
+				</a>
+				<a href="">
+					<div class="row">
+						<div class="col-xs-12 md-title-container">
+							<div class="world_region category-outlined"><small>BiH</small></div>
+							<h5 class="md-title">Koridor 5C kroz Hercegovinu: Ratnom linijom razgraničenja i protiv interesa stanovništva</h5>
+
+							<ul class="time-comments-container">
+								<li><p class="small-txt"><img src="../icons/clock.svg" alt="Time icon" class="timeIcon">09.Februar</p class="small-txt"></li>
+								<li><p class="small-txt"><img src="../icons/comment.svg" alt="Comment icon" class="commentIcon">14 Komentara</p class="small-txt"></li>
+							</ul>
+						</div>
 					</div>
 				</a>
 			</div>
@@ -125,12 +254,11 @@
 		<!-- Sport Section -->
 
 		<!-- Lifestyle section -->
-
 	</div>
 
 	<!-- Footer -->
 	<footer id="pageFooter">
-		<nav class="container">
+		<nav class="container clearfix">
 			<ul>
 				<li>
 					<a href="index.php" class="logo uppercase">Post Scriptum</a>
