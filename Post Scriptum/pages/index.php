@@ -31,12 +31,61 @@
 		-->
 
 		<!-- Banner -->
-		<div id="banner" class="row">
-			<h1 id="topBarLogo" class="uppercase page-title">Post scriptum</h1>
+		<div class="banner">
+			<h1>Post scriptum</h1>
 		</div>
 
 		<!-- Navigation bar -->
-		
+		<nav class="navbar navbar-default main-nav">
+		  <div class="container">
+
+		    <!-- Logo and toggle -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand logo-small" href="#">Post Scriptum</a>
+		    </div>
+
+		    <!-- Navigation content -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active">
+						<a href="#">Početna <span class="sr-only">(current)</span></a>
+					</li>
+					<li><a href="#">Top priča</a></li>
+					<li><a href="#">Kolumna</a></li>
+					<li><a href="#">Politika</a></li>
+					<li><a href="#">Sport</a></li>
+					<li><a href="#">Lifestyle</a></li>
+					<li><a href="#">Kolumna</a></li>
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right">
+					<!-- Search box -->
+					<li>
+						<form class="navbar-form">
+							<div class="input-group">
+								<div class="input-group-btn">
+									<button class="btn btn-default" type="submit">
+										<i class="glyphicon glyphicon-search"></i>
+									</button>
+								</div>
+								<input type="text" class="form-control" placeholder="Unesite pojam pretrage...">
+							</div>
+						</form>
+					</li>
+					<!-- User login/registration button -->
+					<li class="login-icon">
+						<a href="#"><span class="glyphicon glyphicon-user"></span></a>
+					</li>
+				</ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container -->
+		</nav>
 	</header>
 	
 	<!-- Main Content Container -->
@@ -177,7 +226,6 @@
 				</a>
 			</div>
 			
-			
 			<!-- Most read articles -->
 			<div class="article-sm col-md-3 hidden-sm hidden-xs">
 				<a href="">
@@ -257,26 +305,26 @@
 	</div>
 
 	<!-- Footer -->
-	<footer id="pageFooter">
-		<nav class="container clearfix">
-			<ul>
-				<li>
-					<a href="index.php" class="logo uppercase">Post Scriptum</a>
-				</li><li class="navBarContent">
-					<a href="index.php" class="active"> O nama </a>
-				</li><li class="navBarContent">
-					<a href="top_price.php"> Impressum </a>
-				</li><li class="navBarContent">
-					<a href="svijet_regija.php"> Marketing </a>
-				</li><li class="navBarContent">
-					<a href="biznis.php"> Dojavi vijest </a>
-				</li><li class="navBarContent">
-					<a href="sport.php"> Uslovi korištenja </a>
-				</li>
-			</ul>
+	<footer>
+		<nav class="navbar main-footer">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="index.html" class="navbar-brand logo-small">Post Scriptum</a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li><a href="#">O nama</a></li>
+					<li><a href="#">Impressum</a></li>
+					<li><a href="#">Marketing</a></li>
+					<li><a href="#">Dojavi vijest</a></li>
+					<li><a href="#">Uslovi korištenja</a></li>
+				</ul>
+			</div>
 		</nav>
 	</footer>
 
+	<!-- Additional JavaScript files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="../js/bootstrap.js"></script>
 	<script src="../scripts/javascript.js"></script>
 </body>
 
