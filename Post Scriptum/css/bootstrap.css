@@ -8,9 +8,11 @@ html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
+  min-width: 400px;
 }
 body {
   margin: 0;
+  min-width: 400px;
 }
 article,
 aside,
@@ -4370,7 +4372,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-right: -15px;
   margin-bottom: 8px;
   margin-left: -15px;
-  border-top: 1px solid transparent;
+  border-left: 1px solid #ccc;
   border-bottom: 1px solid transparent;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 0 rgba(255, 255, 255, .1);
           box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 0 rgba(255, 255, 255, .1);
@@ -6755,6 +6757,11 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
 
 /*
 [class*='col-'] {
