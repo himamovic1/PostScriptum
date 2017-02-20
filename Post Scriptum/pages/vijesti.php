@@ -7,7 +7,7 @@
 	<meta name="description" content="Post Scriptum novinski portal sport">
 	<meta name="keywords" content="sarajevo,vijesti,novine,portal,sport">
 
-	<title>Post Scriptum - Lifestyle</title>
+	<title>Post Scriptum - Sport</title>
 
 	<link rel="stylesheet" href="../css/bootstrap.css">
 	<link rel="stylesheet" href="../css/style.css">
@@ -56,12 +56,12 @@
 					<li><a href="index.php">Početna</a></li>
 					<li><a href="top_price.php">Top priče</a></li>
 					<li><a href="kolumne.php">Kolumne</a></li>
-					<li><a href="vijesti.php">Vijesti</a></li>
+					<li class="active">
+						<a href="vijesti.php">Vijesti<span class="sr-only">(current)</span></a>
+					</li>
 					<li><a href="politika.php">Politika</a></li>
 					<li><a href="sport.php">Sport</a></li>
-					<li class="active">
-						<a href="lifestyle.php">Lifestyle <span class="sr-only">(current)</span></a>
-					</li>
+					<li><a href="lifestyle.php">Lifestyle</a></li>
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right separator-vertical">

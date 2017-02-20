@@ -56,9 +56,10 @@
 					<li class="active">
 						<a href="index.php">Početna <span class="sr-only">(current)</span></a>
 					</li>
-					<li><a href="top-prica.php">Top priča</a></li>
+					<li><a href="top_price.php">Top priče</a></li>
 					<li><a href="kolumne.php">Kolumne</a></li>
-					<li><a href="#">Politika</a></li>
+					<li><a href="vijesti.php">Vijesti</a></li>
+					<li><a href="politika.php">Politika</a></li>
 					<li><a href="sport.php">Sport</a></li>
 					<li><a href="lifestyle.php">Lifestyle</a></li>
 				</ul>
@@ -104,8 +105,8 @@
 				</a>
 			</article>
 
-			<!-- Most read articles -->
-			<div class="article-sm">
+			<!-- Column articles -->
+			<div class="article-sm ">
 				<a href="" class="col-md-3 col-sm-6 col-xs-12">
 					<div class="row">
 						<div class="col-xs-12">
@@ -169,11 +170,10 @@
 		<div class="row">
 			<div class="category-header-container col-md-9 col-sm-7 col-xs-12 world_region clearfix">
 				<ul>
-					<li style="float: left;">Vijesti</li>
-					<li class="category-inactive grey">Politika</li>
-					<li class="category-active world_region">Crna hronika</li>
-					<li class="category-active world_region">Svijet</li>
+					<li style="float: left;">Politika</li>
+					<li class="category-active world_region">Regija</li>
 					<li class="category-active world_region">BiH</li>
+					<li class="category-active world_region">Svijet</li>
 				</ul>
 				<div class="separator-full"></div>
 			</div>
@@ -377,10 +377,10 @@
 			<div class="category-header-container col-md-9 col-sm-7 col-xs-12 sport clearfix">
 				<ul>
 					<li style="float: left;">Sport</li>
-					<li class="category-active sport"><span>Rukomet</span></li>
-					<li class="category-inactive grey">Tenis</li>
+					<li class="category-active sport"><span>Ostalo</span></li>
+					<li class="category-inactive grey">Zimski sportovi</li>
 					<li class="category-active sport">Košarka</li>
-					<li class="category-active sport">Nogomet</li>
+					<li class="category-active sport">Fudbal</li>
 				</ul>
 				<div class="separator-full"></div>
 			</div>
@@ -584,8 +584,9 @@
 			<div class="category-header-container col-md-12 col-sm-12 col-xs-12 lifestyle clearfix">
 				<ul>
 					<li style="float: left;">Lifestyle</li>
-					<li class="category-active lifestyle">Hrana i piće</li>
-					<li class="category-active lifestyle">Putovanja</li>
+					<li class="category-active lifestyle">Kultura</li>
+					<li class="category-active lifestyle">Muzika</li>
+					<li class="category-active lifestyle">Film</li>
 					<li class="category-active lifestyle">Moda i ljepota</li>
 					<li class="category-active lifestyle">Zdravlje</li>
 				</ul>
