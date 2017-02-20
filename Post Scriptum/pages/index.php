@@ -54,13 +54,13 @@
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
 					<li class="active">
-						<a href="#">Početna <span class="sr-only">(current)</span></a>
+						<a href="index.php">Početna <span class="sr-only">(current)</span></a>
 					</li>
-					<li><a href="#">Top priča</a></li>
-					<li><a href="#">Kolumne</a></li>
+					<li><a href="top-prica.php">Top priča</a></li>
+					<li><a href="kolumne.php">Kolumne</a></li>
 					<li><a href="#">Politika</a></li>
-					<li><a href="#">Sport</a></li>
-					<li><a href="#">Lifestyle</a></li>
+					<li><a href="sport.php">Sport</a></li>
+					<li><a href="lifestyle.php">Lifestyle</a></li>
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right separator-vertical">
@@ -84,6 +84,85 @@
 	<!-- Main Content Container -->
 	<div class="container">
 		<!-- Top Story Section -->
+		<section class="row">
+			<!-- Top story article -->
+			<article class="col-md-9 col-sm-12 col-xs-12 article-top-story">
+				<a href="">
+					<img src="../img/img1.png" alt="Article image" class="huge-image img-responsive center-block">
+					
+					<div class="top-story-title-container">
+						<div class="top-story category-filled"><small>Top priča</small></div>
+						<h2 class="bg-title-inverse">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h2>
+
+						<div class="separator-200" "></div>
+
+						<ul class="time-comments-container">
+							<li><p class="small-txt-inverse"><img src="../icons/clock.svg" alt="Time icon" class="timeIcon">09.Februar</p></li>
+							<li><p class="small-txt-inverse"><img src="../icons/comment.svg" alt="Comment icon" class="commentIcon">14 Komentara</p></li>
+						</ul>
+					</div>
+				</a>
+			</article>
+
+			<!-- Most read articles -->
+			<div class="article-sm">
+				<a href="" class="col-md-3 col-sm-6 col-xs-12">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="column category-outlined"><small>Kolumne</small></div>
+							<h5 class="md-title">Koridor 5C kroz Hercegovinu: Ratnom linijom razgraničenja i protiv interesa stanovništva</h5>
+
+							<ul class="time-comments-container">
+								<li><p class="small-txt"><img src="../icons/clock.svg" alt="Time icon" class="timeIcon">09.Februar</p class="small-txt"></li>
+								<li><p class="small-txt"><img src="../icons/comment.svg" alt="Comment icon" class="commentIcon">14 Komentara</p class="small-txt"></li>
+							</ul>
+						</div>
+					</div>
+				</a>
+
+				<a href="" class="col-md-3 col-sm-6 col-xs-12">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="column category-outlined"><small>Kolumne</small></div>
+							<h5 class="md-title">Koridor 5C kroz Hercegovinu: Ratnom linijom razgraničenja i protiv interesa stanovništva</h5>
+
+							<ul class="time-comments-container">
+								<li><p class="small-txt"><img src="../icons/clock.svg" alt="Time icon" class="timeIcon">09.Februar</p class="small-txt"></li>
+								<li><p class="small-txt"><img src="../icons/comment.svg" alt="Comment icon" class="commentIcon">14 Komentara</p class="small-txt"></li>
+							</ul>
+						</div>
+					</div>
+				</a>
+
+				<a href="" class="col-md-3 col-sm-6 col-xs-12">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="column category-outlined"><small>Kolumne</small></div>
+							<h5 class="md-title">Koridor 5C kroz Hercegovinu: Ratnom linijom razgraničenja i protiv interesa stanovništva</h5>
+
+							<ul class="time-comments-container">
+								<li><p class="small-txt"><img src="../icons/clock.svg" alt="Time icon" class="timeIcon">09.Februar</p class="small-txt"></li>
+								<li><p class="small-txt"><img src="../icons/comment.svg" alt="Comment icon" class="commentIcon">14 Komentara</p class="small-txt"></li>
+							</ul>
+						</div>
+					</div>
+				</a>
+
+				<a href="" class="col-md-3 col-sm-6 col-xs-12">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="column category-outlined"><small>Kolumne</small></div>
+							<h5 class="md-title">Koridor 5C kroz Hercegovinu: Ratnom linijom razgraničenja i protiv interesa stanovništva</h5>
+
+							<ul class="time-comments-container">
+								<li><p class="small-txt"><img src="../icons/clock.svg" alt="Time icon" class="timeIcon">09.Februar</p class="small-txt"></li>
+								<li><p class="small-txt"><img src="../icons/comment.svg" alt="Comment icon" class="commentIcon">14 Komentara</p class="small-txt"></li>
+							</ul>
+						</div>
+					</div>
+				</a>
+			</div>
+		</section>
 
 		<!-- News Section -->
 		<!-- Category header -->
@@ -515,7 +594,7 @@
 		</div>
 		<section class="row">
 			<!-- Large article -->
-			<article class="article-big col-md-4 col-sm-7 col-xs-12">
+			<article class="article-big col-md-4 col-sm-4 col-xs-12">
 				<a href="">
 					<img src="../img/img1.png" alt="Article image" class="big-image">
 					
@@ -533,7 +612,8 @@
 				</a>
 			</article>
 
-			<article class="article-big col-md-4 col-sm-7 col-xs-12">
+			<!-- Large article -->
+			<article class="article-big col-md-4 col-sm-4 col-xs-12">
 				<a href="">
 					<img src="../img/img1.png" alt="Article image" class="big-image">
 					
@@ -551,7 +631,8 @@
 				</a>
 			</article>
 
-			<article class="article-big col-md-4 col-sm-7 col-xs-12">
+			<!-- Large article -->
+			<article class="article-big col-md-4 col-sm-4 col-xs-12">
 				<a href="">
 					<img src="../img/img1.png" alt="Article image" class="big-image">
 					
@@ -567,7 +648,7 @@
 						</ul>
 					</div>
 				</a>
-			</article>
+			</article>		
 		</section>
 	</div>
 

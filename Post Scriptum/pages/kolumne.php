@@ -55,11 +55,11 @@
 				<ul class="nav navbar-nav">
 					<li><a href="index.php">Početna</a></li>
 					<li><a href="top-prica.php">Top priča</a></li>
-					<li><a href="kolumne.php">Kolumne</a></li>
-					<li><a href="#">Politika</a></li>
 					<li class="active">
-						<a href="sport.php">Sport <span class="sr-only">(current)</span></a>
+						<a href="kolumne.php">Kolumne <span class="sr-only">(current)</span></a>
 					</li>
+					<li><a href="#">Politika</a></li>
+					<li><a href="sport.php">Sport</a></li>
 					<li><a href="lifestyle.php">Lifestyle</a></li>
 				</ul>
 
