@@ -118,6 +118,7 @@ textarea:focus, input:focus{
 	text-align: center;
 	letter-spacing: 1px;
 	display: table-cell;
+	text-transform: uppercase;
 }
 
 .category-outlined {
@@ -128,6 +129,7 @@ textarea:focus, input:focus{
 	text-align: center;
 	letter-spacing: 1px;
 	display: table-cell;
+	text-transform: uppercase;
 }
 
 .category-header-container {
@@ -145,6 +147,7 @@ textarea:focus, input:focus{
 	padding-left: 0;
 	margin-left: 0;
 	text-indent: 0;
+	font-size: 1.2em;
 }
 
 .category-active {
@@ -170,7 +173,7 @@ textarea:focus, input:focus{
 
 /* COULD BE REMOVED */
 article[class^='article-']:hover {
-	background-color: #dfdfdf;
+	background-color: #ececec;
 }
 
 .huge-image {
@@ -260,9 +263,9 @@ article[class^='article-']:hover {
 
 .top-story-title-container {
 	position: absolute;
-	padding-right: 2em;
-	bottom: 1em;
-	left: 2em;
+	padding-right: 2.5em;
+	bottom: 1.5em;
+	left: 2.5em;
 }
 
 .big-title-container h2, .md-title-container h5 {
@@ -349,6 +352,12 @@ article[class^='article-']:hover {
 	-webkit-box-shadow: 0px 3px 4px #ccc;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=270, Color='#cccccc')";
 	filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=270, Color='#cccccc')";
+}
+
+
+.fixed {
+    position:fixed;
+    top:0;
 }
 
 .login-icon {

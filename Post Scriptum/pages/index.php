@@ -97,8 +97,8 @@
 						<div class="separator-200" "></div>
 
 						<ul class="time-comments-container">
-							<li><p class="small-txt-inverse"><img src="../icons/clock.svg" alt="Time icon" class="timeIcon">09.Februar</p></li>
-							<li><p class="small-txt-inverse"><img src="../icons/comment.svg" alt="Comment icon" class="commentIcon">14 Komentara</p></li>
+							<li><p class="small-txt-inverse"><img src="../icons/clock_white.svg" alt="Time icon" class="timeIcon">09.Februar</p></li>
+							<li><p class="small-txt-inverse"><img src="../icons/comment_white.svg" alt="Comment icon" class="commentIcon">14 Komentara</p></li>
 						</ul>
 					</div>
 				</a>

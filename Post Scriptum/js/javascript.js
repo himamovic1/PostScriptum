@@ -5,3 +5,4 @@ function toggleNavBar() {
 	for (var i = 0; i < navBarItems.length; i++) 
 		navBarItems[i].classList.toggle("show");
 }
+
