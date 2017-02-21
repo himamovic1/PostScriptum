@@ -511,6 +511,23 @@ a.search-box-top {
 	filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='#cccccc')";
 }
 
+
+/* ---------------------------------------------- */
+/* ----------- User Login/Registration ---------- */
+/* ---------------------------------------------- */
+.registration-container {
+	padding: 5em;
+	background-color: #fff;
+}
+
+#input-fields-group {
+	padding: 1em 0;
+}
+
+small[class^='help-block'] {
+	font-size: 1em;
+}
+
 /* ---------------------------------------------- */
 /* ---------------- Desktop Grid ---------------- */
 /* ---------------------------------------------- */
