@@ -16,20 +16,6 @@
 <body>
 	<!-- Header -->
 	<header>
-		<!-- Top bar 
-		<ul id="topBar" class="noDisp">
-			<li>
-				<a href="" class="title-white">Kontakt informacije</a>
-			</li>
-			<li>
-				<a href="" class="title-white">Marketing | info@example.com</a> 
-			</li>
-			<li>
-				<a href="" class="title-white">Pratite nas na facebook-u</a>
-			</li>
-		</ul>
-		-->
-
 		<!-- Banner -->
 		<div class="banner">
 			<h1>Post scriptum</h1>
@@ -47,7 +33,7 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a href="#"><img class="navbar-brand" src="../icons/postscriptumlogo.svg"></a>
+		      <a href="index.php"><img class="navbar-brand" src="../icons/postscriptumlogo.svg"></a>
 		    </div>
 
 		    <!-- Navigation content -->
@@ -372,11 +358,11 @@
 		<nav class="navbar main-footer">
 			<div class="container">
 				<div class="navbar-header">
-					<a href="#"><img class="navbar-brand" src="../icons/postscriptumlogofooter.svg"></a>
+					<a href="index.php"><img class="navbar-brand" src="../icons/postscriptumlogofooter.svg"></a>
 				</div>
 				<ul class="nav navbar-nav">
-					<li><a href="#">O nama</a></li>
-					<li><a href="#">Impressum</a></li>
+					<li><a href="o_nama.html">O nama</a></li>
+					<li><a href="impressum.html">Impressum</a></li>
 					<li><a href="#">Marketing</a></li>
 					<li><a href="#">Dojavi vijest</a></li>
 					<li><a href="#">Uslovi korištenja</a></li>
