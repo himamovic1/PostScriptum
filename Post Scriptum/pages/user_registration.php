@@ -3,7 +3,7 @@
 <html lang="bs">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=1, user-scalable=no">
 	<meta name="description" content="Post Scriptum novinski portal pocetna">
 	<meta name="keywords" content="sarajevo,vijesti,novine,portal">
 
