@@ -82,90 +82,142 @@
 		</nav>
 	</header>
 	
+	<!-- Columns section -->
+	<div class="columns-container hidden-sm hidden-xs">
+		<div class="container">
+		
+		<section class="row">
+			<a href="" class="col-md-3">
+				<div class="row">
+					<div class="col-md-4 col-sm-3 col-xs-4">
+						<img src="../img/img1.png" alt="Article image" class="md-image" >
+					</div>
+					<div class="col-md-8 col-sm-8 col-xs-9 sm-title-container">
+						<div class="column category-outlined"><small>Kolumne</small></div>
+						<h5 class="md-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h5>
+						
+					</div>
+				</div>
+			</a>
+
+			<a href="" class="col-md-3">
+				<div class="row">
+					<div class="col-md-4 col-sm-4 col-xs-4">
+						<img src="../img/img1.png" alt="Article image" class="md-image" >
+					</div>
+					<div class="col-md-8 col-sm-8 col-xs-8 sm-title-container">
+						<div class="column category-outlined"><small>Kolumne</small></div>
+						<h5 class="md-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h5>
+						
+					</div>
+				</div>
+			</a>
+
+			<a href="" class="col-md-3">
+				<div class="row">
+					<div class="col-md-4 col-xs-4">
+						<img src="../img/img1.png" alt="Article image" class="md-image" >
+					</div>
+					<div class="col-md-8  col-xs-8 sm-title-container">
+						<div class="column category-outlined"><small>Kolumne</small></div>
+						<h5 class="md-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h5>
+						
+					</div>
+				</div>
+			</a>
+
+			<a href="" class="col-md-3">
+				<div class="row">
+					<div class="col-md-4 col-xs-4">
+						<img src="../img/img1.png" alt="Article image" class="md-image" >
+					</div>
+					<div class="col-md-8  col-xs-8 sm-title-container">
+						<div class="column category-outlined"><small>Kolumne</small></div>
+						<h5 class="md-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h5>
+						
+					</div>
+				</div>
+			</a>
+		</section>
+		</div>	
+	</div>
+
 	<!-- Main Content Container -->
 	<div class="container">
 		<!-- Top Story Section -->
 		<section class="row">
 			<!-- Top story article -->
-			<article class="col-md-9 col-sm-12 col-xs-12 article-top-story">
+			<article class="col-md-6 col-sm-7 col-xs-12 article-top-story">
 				<a href="">
-					<img src="../img/img1.png" alt="Article image" class="huge-image img-responsive center-block">
-					
-					<div class="top-story-title-container">
-						<div class="top-story category-filled"><small>Top priča</small></div>
-						<h2 class="bg-title-inverse">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h2>
+					<div class="top-story-container">
+						<img src="../img/img1.png" alt="Article image" class="huge-image">
 
-						<div class="separator-200" "></div>
+						<div class="top-story-title-container">
+							<div class="top-story category-filled"><small>Top priča</small></div>
+							<h2 class="bg-title-inverse">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h2>
 
-						<ul class="time-comments-container">
-							<li><p class="small-txt-inverse"><img src="../icons/clock_white.svg" alt="Time icon" class="timeIcon">09.Februar</p></li>
-							<li><p class="small-txt-inverse"><img src="../icons/comment_white.svg" alt="Comment icon" class="commentIcon">14 Komentara</p></li>
-						</ul>
+							<div class="separator-200"></div>
+
+							<ul class="time-comments-container">
+								<li><p class="small-txt-inverse"><img src="../icons/clock_white.svg" alt="Time icon" class="timeIcon">09.Februar</p></li>
+								<li><p class="small-txt-inverse"><img src="../icons/comment_white.svg" alt="Comment icon" class="commentIcon">14 Komentara</p></li>
+							</ul>
+						</div>
+						
 					</div>
 				</a>
 			</article>
 
-			<!-- Column articles -->
-			<div class="article-sm ">
-				<a href="" class="col-md-3 col-sm-6 col-xs-12">
-					<div class="row">
-						<div class="col-xs-12">
-							<div class="column category-outlined"><small>Kolumne</small></div>
-							<h5 class="md-title">Koridor 5C kroz Hercegovinu: Ratnom linijom razgraničenja i protiv interesa stanovništva</h5>
+			<article class="col-md-6 col-sm-5 col-xs-12 article-top-story no-padding">
+				<div class="col-md-6 col-sm-12 hidden-xs">
+					<a href="">
+						<div class="top-story-container">
+							<img src="../img/img1.png" alt="Article image" class="md-top-image">
 
-							<ul class="time-comments-container">
-								<li><p class="small-txt"><img src="../icons/clock.svg" alt="Time icon" class="timeIcon">09.Februar</p class="small-txt"></li>
-								<li><p class="small-txt"><img src="../icons/comment.svg" alt="Comment icon" class="commentIcon">14 Komentara</p class="small-txt"></li>
-							</ul>
+							<div class="top-story-title-container">
+								<div class="top-story category-filled"><small>Top priča</small></div>
+								<h4 class="md-title-inverse">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h4>
+							</div>
 						</div>
-					</div>
-				</a>
+					</a>
+					<a href="">
+						<div class="top-story-container">
+							<img src="../img/img1.png" alt="Article image" class="md-top-image">
 
-				<a href="" class="col-md-3 col-sm-6 col-xs-12">
-					<div class="row">
-						<div class="col-xs-12">
-							<div class="column category-outlined"><small>Kolumne</small></div>
-							<h5 class="md-title">Koridor 5C kroz Hercegovinu: Ratnom linijom razgraničenja i protiv interesa stanovništva</h5>
-
-							<ul class="time-comments-container">
-								<li><p class="small-txt"><img src="../icons/clock.svg" alt="Time icon" class="timeIcon">09.Februar</p class="small-txt"></li>
-								<li><p class="small-txt"><img src="../icons/comment.svg" alt="Comment icon" class="commentIcon">14 Komentara</p class="small-txt"></li>
-							</ul>
+							<div class="top-story-title-container">
+								<div class="top-story category-filled"><small>Top priča</small></div>
+								<h4 class="md-title-inverse">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h4>
+							</div>
 						</div>
-					</div>
-				</a>
+					</a>
+				</div>
+				<div class="col-md-6 hidden-sm hidden-xs">
+					<a href="">
+						<div class="top-story-container">
+							<img src="../img/img1.png" alt="Article image" class="md-top-image">
 
-				<a href="" class="col-md-3 col-sm-6 col-xs-12">
-					<div class="row">
-						<div class="col-xs-12">
-							<div class="column category-outlined"><small>Kolumne</small></div>
-							<h5 class="md-title">Koridor 5C kroz Hercegovinu: Ratnom linijom razgraničenja i protiv interesa stanovništva</h5>
-
-							<ul class="time-comments-container">
-								<li><p class="small-txt"><img src="../icons/clock.svg" alt="Time icon" class="timeIcon">09.Februar</p class="small-txt"></li>
-								<li><p class="small-txt"><img src="../icons/comment.svg" alt="Comment icon" class="commentIcon">14 Komentara</p class="small-txt"></li>
-							</ul>
+							<div class="top-story-title-container">
+								<div class="top-story category-filled"><small>Top priča</small></div>
+								<h4 class="md-title-inverse">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h4>
+							</div>
 						</div>
-					</div>
-				</a>
+					</a>
+				
+					<a href="">
+						<div class="top-story-container">
+							<img src="../img/img1.png" alt="Article image" class="md-top-image">
 
-				<a href="" class="col-md-3 col-sm-6 col-xs-12">
-					<div class="row">
-						<div class="col-xs-12">
-							<div class="column category-outlined"><small>Kolumne</small></div>
-							<h5 class="md-title">Koridor 5C kroz Hercegovinu: Ratnom linijom razgraničenja i protiv interesa stanovništva</h5>
-
-							<ul class="time-comments-container">
-								<li><p class="small-txt"><img src="../icons/clock.svg" alt="Time icon" class="timeIcon">09.Februar</p class="small-txt"></li>
-								<li><p class="small-txt"><img src="../icons/comment.svg" alt="Comment icon" class="commentIcon">14 Komentara</p class="small-txt"></li>
-							</ul>
+							<div class="top-story-title-container">
+								<div class="top-story category-filled"><small>Top priča</small></div>
+								<h4 class="md-title-inverse">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h4>
+							</div>
 						</div>
-					</div>
-				</a>
-			</div>
+					</a>
+				</div>
+			</article>
 		</section>
 
-		<!-- News Section -->
+		<!-- Politics Section -->
 		<!-- Category header -->
 		<div class="row">
 			<div class="category-header-container col-md-9 col-sm-7 col-xs-12 world_region clearfix">
@@ -186,7 +238,7 @@
 		</div>
 		<section class="row">
 			<!-- Large article -->
-			<article class="article-big col-md-4 col-sm-7 col-xs-12">
+			<article class="article-big col-md-4 col-sm-7 hidden-xs">
 				<a href="">
 					<img src="../img/img1.png" alt="Article image" class="big-image">
 					
@@ -393,7 +445,7 @@
 		</div>
 		<section class="row">
 			<!-- Large article -->
-			<article class="article-big col-md-4 col-sm-7 col-xs-12">
+			<article class="article-big col-md-4 col-sm-7 hidden-xs">
 				<a href="">
 					<img src="../img/img1.png" alt="Article image" class="big-image">
 					
@@ -595,7 +647,7 @@
 		</div>
 		<section class="row">
 			<!-- Large article -->
-			<article class="article-big col-md-4 col-sm-4 col-xs-12">
+			<article class="article-big col-md-4 col-sm-4 hidden-xs">
 				<a href="">
 					<img src="../img/img1.png" alt="Article image" class="big-image">
 					

@@ -79,6 +79,8 @@ textarea:focus, input:focus{
 	border-left: 1px solid #ccc;
 }
 
+.no-padding { padding-left: 0; padding-right: 0; }
+
 /* ---------------------------------------------- */
 /* ---------- Category Specific Styles ---------- */
 /* ---------------------------------------------- */
@@ -175,13 +177,33 @@ textarea:focus, input:focus{
 	position: relative;
 }
 
+.columns-container {
+	background-color: #eee;
+	padding-top: 2.5em;
+	margin-top: -1.5em;
+	margin-bottom: 2em;
+
+	box-shadow: inset 0px -2px 4px #ddd;
+	-moz-box-shadow: inset  0px -2px 4px #ddd;
+	-webkit-box-shadow: inset  0px -2px 4px #ddd;
+}
+
 /* COULD BE REMOVED */
 article[class^='article-']:hover {
 	background-color: #ececec;
 }
 
-.huge-image {
+.md-top-image {
 	min-width: 100%;
+	min-height: 300px;
+	object-fit: cover;
+	margin-bottom: 0.7em;
+}
+
+.huge-image {
+	max-width: 100%; 
+	max-height: 100%;
+	min-width: auto;
 	min-height: 300px;
 	object-fit: cover;
 	margin-bottom: 0.7em;
@@ -213,6 +235,7 @@ article[class^='article-']:hover {
 	border-radius: 2em; 
 	text-align: center; 
 	padding: 0.4em 0;
+	margin-top: 1em;
 }
 
 .btn-grey-outlined:hover {
@@ -256,7 +279,7 @@ article[class^='article-']:hover {
 
 .bg-title-inverse {
 	font-size: 1.75em;
-	color: #fff;
+	color: #eee;
 	margin-bottom: 0.5em;
 }
 
@@ -265,11 +288,34 @@ article[class^='article-']:hover {
 	color: #3a3a3a;
 }
 
+.md-title-inverse {
+	font-size: 1.2em;
+	color: #eee;
+	margin-bottom: 0.5em;
+}
+
+.sm-title-container {
+	padding-right: 10px;
+}
+
+.sm-title {
+
+}
+
+.top-story-container {
+	position: relative;
+}
+
 .top-story-title-container {
-	position: absolute;
-	padding-right: 2.5em;
-	bottom: 1.5em;
-	left: 2.5em;
+	position: absolute; 
+	bottom: 10px; 
+	padding: 0.5em 1.5em;
+
+	background: transparent; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(transparent, #111111); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(transparent, #111111); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(transparent, #111111); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(transparent, #111111); /* Standard syntax */
 }
 
 .big-title-container h2, .md-title-container h5 {
@@ -460,12 +506,12 @@ article[class^='article-']:hover {
 	background-color: #fefefe;
 	border: none;
 	border-radius: 0;
-
-	box-shadow: 0px 3px 4px #ccc;
-	-moz-box-shadow: 0px 3px 4px #ccc;
-	-webkit-box-shadow: 0px 3px 4px #ccc;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=270, Color='#cccccc')";
-	filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=270, Color='#cccccc')";
+	
+	box-shadow: 0px 2px 4px #ddd;
+	-moz-box-shadow: 0px 2px 4px #ddd;
+	-webkit-box-shadow: 0px 2px 4px #ddd;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=270, Color='#dddddd')";
+	filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=270, Color='#dddddd')";
 }
 
 
@@ -504,11 +550,11 @@ a.search-box-top {
 	border: none;
 	border-radius: 0;
 
-	box-shadow: 0px -3px 4px #ccc;
-	-moz-box-shadow: 0px -3px 4px #ccc;
-	-webkit-box-shadow: 0px -3px 4px #ccc;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='#cccccc')";
-	filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='#cccccc')";
+	box-shadow: 0px -2px 4px #ddd;
+	-moz-box-shadow: 0px -2px 4px #ddd;
+	-webkit-box-shadow: 0px -2px 4px #ddd;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=90, Color='#dddddd')";
+	filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=90, Color='#dddddd')";
 }
 
 
@@ -529,10 +575,53 @@ small[class^='help-block'] {
 }
 
 /* ---------------------------------------------- */
-/* ---------------- Desktop Grid ---------------- */
+/* ----------- User Login/Registration ---------- */
 /* ---------------------------------------------- */
-@media all and (min-width: 992px) {
+.registration-container {
+	padding: 5em;
+	background-color: #fff;
+}
 
+#input-fields-group {
+	padding: 1em 0;
+}
+
+small[class^='help-block'] {
+	font-size: 1em;
+}
+
+/* ---------------------------------------------- */
+/* ---------------- Devices Grid ---------------- */
+/* ---------------------------------------------- */
+@media (min-width: 768px) {
+	.md-top-image {
+		max-width: 100%; 
+		max-height: 100%;
+		min-width: 220px;
+		min-height: 188px;
+		object-fit: cover;
+		margin-bottom: 0.7em;
+	}
+
+	.huge-image {
+		max-width: 100%; 
+		max-height: 100%;
+		min-width: 408px;
+		min-height: 385px;
+		object-fit: cover;
+		margin-bottom: 0.7em;
+	}
+
+	.big-image {
+		max-width: 100%; 
+		max-height: 100%;
+		min-width: 408px;
+		min-height: 385px;
+		object-fit: cover;
+		margin-bottom: 0.7em;
+	}
+}
+@media all and (min-width: 992px) {
 	#topBar { display: block; }
 	#menuToggleButton { display: none; }
 	.logo { display: inline; float: left; padding-left: 1em; }
@@ -540,4 +629,35 @@ small[class^='help-block'] {
 	.navBarContent a { padding: 0; }
 	.navBarContent a:hover, .navBarContent a:active { background-color: transparent; }
 	#pageFooter ul li { clear: none; display: inline; }
+
+
+	.md-top-image {
+		max-width: 100%; 
+		max-height: 100%;
+		min-width: 200px;
+		min-height: 185px;
+		object-fit: cover;
+		margin-bottom: 0.7em;
+	}
+
+	.huge-image {
+		max-width: 100%; 
+		max-height: 100%;
+		min-width: 400px;
+		min-height: 380px;
+		object-fit: cover;
+		margin-bottom: 0.7em;
+	}
+
+	.big-image {
+		max-width: 100%; 
+		max-height: 100%;
+		min-width: 280px;
+		min-height: 265px;
+		object-fit: cover;
+		margin-bottom: 0.7em;
+	}
+}
+@media (min-width: 1200px) {
+ 
 }
