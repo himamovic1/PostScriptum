@@ -15,9 +15,9 @@
 
 <body>
 
-	<div class="container">
+	<div class="container" style="border: 1px solid #ccc; border-radius: 10px; padding: 0 2em;">
 		<div class="row">
-			<h1>Pregled svih prijavljenih korisnika</h1>
+			<h1>Pregled svih korisnika</h1>
 		</div>
 
 		<div class="row">

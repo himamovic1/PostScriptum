@@ -6,6 +6,73 @@
 	height: 32px;
 }
 
+
 #users-table td {
 	vertical-align: middle;
 }
+
+body {
+  background-color: #f5f5f5;
+  padding-top: 64px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0 0 0 1.5em;
+}
+
+ul li {
+  float: left;
+  
+}
+
+.main-nav {
+  background-color: #f5f5f5;
+  border: 0px;
+  padding: 0.5em 0;
+}
+
+#sidebar {
+  position: fixed;
+  background-color: #fff;
+  width: 250px;
+  height: 100%;
+  padding: 1.5em 0;
+}
+
+#sidebar a {
+  color: #626262;
+  padding: 1em 1.5em;
+}
+
+
+#sidebar .glyphicon {
+  padding-right: 1em;
+}
+
+#content-holder{
+  background-color: #fff;
+  margin-left: 270px;
+  padding: 1.5em;
+}
+
+.profile-section .form-group {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+@media (min-width: 767px) {
+  .profile-section {
+	padding-top: 1.5em;
+	width: 100%;
+}
+}
+
+@media (min-width: 979px) {
+	.profile-section {
+	padding-top: 1.5em;
+	width: 65%;
+}
+}
+
+
