@@ -1,11 +1,28 @@
 /* ---------------------------------------------- */
+/* -------------------- General ----------------- */
+/* ---------------------------------------------- */
+.separator-full {
+  border-bottom: 1px solid #ccc;
+}
+
+.separator-200 {
+  height: 1px; 
+  background-color: #ccc; 
+  margin-top: 0.7em; 
+  margin-bottom: 0.7em;
+}
+
+.vertical-separator {
+  margin-top: 2em;
+}
+
+/* ---------------------------------------------- */
 /* ------------------ User panel ---------------- */
 /* ---------------------------------------------- */
 .usr-avatar-sm {
 	width: 32px;
 	height: 32px;
 }
-
 
 #users-table td {
 	vertical-align: middle;
@@ -26,10 +43,26 @@ ul li {
   
 }
 
+
+/* ---------------------------------------------- */
+/* ------------------ Navigation ---------------- */
+/* ---------------------------------------------- */
 .main-nav {
   background-color: #f5f5f5;
   border: 0px;
   padding: 0.5em 0;
+}
+
+.navbar-shadow {
+  box-shadow: 0px 2px 4px #bbb;
+  -moz-box-shadow: 0px 2px 4px #bbb;
+  -webkit-box-shadow: 0px 2px 4px #bbb;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=270, Color='#bbbbbb')";
+  filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=270, Color='#bbbbbb')";
+}
+
+.panel-shadow {
+    box-shadow: rgba(0, 0, 0, 0.2) 1px 3px 8px;
 }
 
 #sidebar {

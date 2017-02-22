@@ -361,7 +361,6 @@ article[class^='article-']:hover {
 .comment-input-area {
 	padding: 0;
 }
-
 .panel-shadow {
     box-shadow: rgba(0, 0, 0, 0.2) 1px 3px 8px;
 }
@@ -513,7 +512,6 @@ article[class^='article-']:hover {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=270, Color='#dddddd')";
 	filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=270, Color='#dddddd')";
 }
-
 
 .fixed {
     position:fixed;

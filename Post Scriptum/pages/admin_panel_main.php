@@ -10,11 +10,14 @@
 
 	<link rel="stylesheet" href="../css/bootstrap.css">
 	<link rel="stylesheet" href="../css/style_admin_panel.css">
+
+	<!-- CK editor script -->
+	<script src="../ckeditor/ckeditor.js"></script>
 </head>
 <body>
     <header>
     	<!-- Navigation bar -->
-		<nav class="navbar navbar-default navbar-fixed-top main-nav">
+		<nav class="navbar navbar-inverse navbar-fixed-top navbar-shadow">
 		  <div class="container">
 
 		    <!-- Logo and toggle -->
@@ -32,98 +35,42 @@
 	<!-- Main content -->
 	<div class="container hidden-xs">
 		<!-- Side bar -->
-	    <aside id="sidebar">
+	    <aside id="sidebar" class="panel-shadow">
 			<ul class="clearfix">
 				<li><img src="../img/usr_default.gif" width="60" height="60" class="img-circle"></li>
 				<li style="padding-left: 1.2em;"><h4>John Doe</h4><p>Administrator</p></li>
 			</ul>
 			<ul class="nav nav-stacked">
-				<li class="active"><a href="#"><span class="glyphicon glyphicon-cog"></span>Korisnički profil<span class="sr-only">(current)</span></a></li>
-				<li><a href="#"><span class="glyphicon glyphicon-list-alt"></span>Pregled vijesti</a></li>
-				<li><a href="#"><span class="glyphicon glyphicon-user"></span>Pregled korisnika</a></li>
-				<li><a href="#"><span class="glyphicon glyphicon-font"></span>Dodaj vijest</a></li>
-				<li><a href="#"><span class="glyphicon glyphicon-log-out"></span>Odjava</a></li>
+				<li class="active">
+					<a href="#" onclick="return load('user_profile')">
+					<span class="glyphicon glyphicon-cog"></span>Korisnički profil<span class="sr-only">(current)</span></a>
+				</li>
+				<li>
+					<a href="#" onclick="return load('pregled_vijesti_content')">
+					<span class="glyphicon glyphicon-list-alt"></span>Pregled vijesti</a>
+				</li>
+				<li>
+					<a href="#" onclick="return load('pregled_korisnika_content')">
+					<span class="glyphicon glyphicon-user"></span>Pregled korisnika</a>
+				</li>
+				<li>
+					<a href="#" onclick="return load('kreiranje_vijesti')">
+					<span class="glyphicon glyphicon-font"></span>Dodaj vijest</a>
+				</li>
+				<li>
+					<a href="index.php">
+					<span class="glyphicon glyphicon-th-list"></span>Povratak na stranicu</a>
+				</li>
+				<li>
+					<a href="#">
+					<span class="glyphicon glyphicon-log-out"></span>Odjava</a>
+				</li>
 			</ul>
 	    </aside>
 
-		<div id="content-holder">
-			<h2>Postavke korisničkog profila</h2>
-			<p>U ovoj sekciji možete upravljati osnovnim informacijama Vašeg profila.</p>
-
-			<!-- Change username section -->
-			<section class="profile-section">
-				<form class="form-horizontal" id="registration-form">
-					<h4>Promjeni korisničko ime</h4>
-					<p>Za promjenu korisničkog imena potrebno je unijeti trenutno korisničko ime a zatim novo korisničko ime koje će u budućnosti biti korišteno.</p>
-
-					<h5 style="margin-top: 2em;">Trenutno korisničko ime:</h5>
-					<!-- Username -->
-					<div class="form-group">
-						<div class="inputGroupContainer">
-							<div class="input-group">
-								<span class="input-group-addon"><i class="glyphicon glyphicon-eye-open"></i></span>
-								<input type="text" class="form-control" name="username" id="username" placeholder="Korisničko ime" required>
-							</div>
-						</div>
-					</div>
-
-					<h5>Novo korisničko ime:</h5>
-					<!-- Username -->
-					<div class="form-group">
-						<div class="inputGroupContainer">
-							<div class="input-group">
-								<span class="input-group-addon"><i class="glyphicon glyphicon-eye-open"></i></span>
-								<input type="text" class="form-control" name="username" id="username" placeholder="Korisničko ime" required>
-							</div>
-						</div>
-					</div>
-
-					<h5>Šifra:</h5>
-					<!-- Password -->
-					<div class="form-group">
-						<div class="inputGroupContainer">
-							<div class="input-group">
-								<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-								<input type="password" class="form-control" name="password" id="password" placeholder="Šifra" required>
-							</div>
-						</div>
-					</div>
-
-					<button type="submit" class="btn btn-success" style="margin-top: 1em; margin-bottom: 2em;">Potvrdi</button>
-				</form>
-			</section>
-
-			<!-- Change password section -->
-			<section class="profile-section">
-				<form class="form-horizontal" id="registration-form">
-					<h4>Promjeni šifru profila</h4>
-					<p>Za promjenu šifre profila potrebno je unijeti trenutnu šifru a zatim novu šifru koja će u budućnosti biti korištena.</p>
-
-					<h5 style="margin-top: 2em;">Trenutna šifra:</h5>
-					<!-- Password -->
-					<div class="form-group">
-						<div class="inputGroupContainer">
-							<div class="input-group">
-								<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-								<input type="password" class="form-control" name="password" id="password" placeholder="Šifra" required>
-							</div>
-						</div>
-					</div>
-
-					<h5>Nova šifra:</h5>
-					<!-- Password -->
-					<div class="form-group">
-						<div class="inputGroupContainer">
-							<div class="input-group">
-								<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-								<input type="password" class="form-control" name="password" id="password" placeholder="Šifra" required>
-							</div>
-						</div>
-					</div>
-
-					<button type="submit" class="btn btn-success" style="margin-top: 1em; margin-bottom: 2em;">Potvrdi</button>
-				</form>
-			</section>
+	    <!-- Content is loaded in this container -->
+		<div id="content-holder" class="panel-shadow">
+			<!-- ALL THINGS GO HERE -->	
 		</div>
 	</div>
 
@@ -135,5 +82,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.min.js"></script>
 	<script src="../js/javascript.js"></script>
 	<script src="../js/form_validation.js"></script>
+	<script src="../js/administration.js"></script>
 </body>
 </html>
