@@ -54,7 +54,7 @@
 					<span class="glyphicon glyphicon-user"></span>Pregled korisnika</a>
 				</li>
 				<li>
-					<a href="#" onclick="return load('kreiranje_vijesti')">
+					<a href="private_html/ckeditor/kreiranje_vijesti.php">
 					<span class="glyphicon glyphicon-font"></span>Dodaj vijest</a>
 				</li>
 				<li>

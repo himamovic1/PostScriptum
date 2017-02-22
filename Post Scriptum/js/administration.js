@@ -16,7 +16,6 @@ function load(page) {
 	else
 		pageRequest = new ActiveXObject('Microsoft.XMLHTTP');
 
-	loadPageScripts(page);
 	page = 'private_html/' + page + '.php';
 	pageRequest.open('GET', page, true);
 
@@ -50,5 +49,5 @@ jQuery.loadScript = function(url, callback) {
 }
 
 function loadCKeditor() {
-	$.loadScript('../ckeditor/ckeditor.js', function() { alert('ucitano'); });
+	$.loadScript('../ckeditor/ckeditor.js', function() {});
 }
