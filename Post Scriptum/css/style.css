@@ -19,7 +19,7 @@
 html, body {
 	/* height: 100%; 
 	font-family: 'Rubik', sans-serif;*/
-	background-color: #fefefe;
+	background-color: #f6f6f6;
 }
 
 section {
@@ -502,7 +502,7 @@ article[class^='article-']:hover {
 
 /* Navigation bar */
 .main-nav {
-	background-color: #fefefe;
+	background-color: rgba(255,255,255,0.987);
 	border: none;
 	border-radius: 0;
 	
@@ -586,6 +586,23 @@ small[class^='help-block'] {
 
 small[class^='help-block'] {
 	font-size: 1em;
+}
+
+/* ---------------------------------------------- */
+/* ----------------- Search box  ---------------- */
+/* ---------------------------------------------- */
+
+.stylish-input-group .input-group-addon{
+    background: white !important; 
+}
+.stylish-input-group .form-control{
+	border-right:0; 
+	box-shadow:0 0 0; 
+	border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
 }
 
 /* ---------------------------------------------- */

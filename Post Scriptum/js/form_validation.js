@@ -46,6 +46,6 @@ $(document).ready(function() {
 					}
 				} // end of fields
 			}).on('success.form.bv', function(e) {
-				alert('Uspješno ste se prijavili na Post Scriptum. Hvala Vam!');
+				//alert('Uspješno ste se prijavili na Post Scriptum. Hvala Vam!');
 			});
 		});

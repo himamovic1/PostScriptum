@@ -15,6 +15,15 @@
 	<script src="../ckeditor/ckeditor.js"></script>
 </head>
 <body>
+	<?php 
+		include('aditionalScripts.php');
+		session_start();
+
+		if(!accessControlAdmin()) {
+			header("Location: login.php");
+		}
+	?>
+
     <header>
     	<!-- Navigation bar -->
 		<nav class="navbar navbar-inverse navbar-fixed-top navbar-shadow">
@@ -62,8 +71,18 @@
 					<span class="glyphicon glyphicon-th-list"></span>Povratak na stranicu</a>
 				</li>
 				<li>
-					<a href="#">
-					<span class="glyphicon glyphicon-log-out"></span>Odjava</a>
+					<form id="logoutForm" method="POST" action="admin_panel_main.php">
+						
+						<!-- Processing form data -->
+						<?php 
+							if($_SERVER['REQUEST_METHOD'] == "POST" && isset($_SESSION['username'])) {
+								session_unset();
+								header("Location: index.php"); // Redirect to home page
+							}
+						?>
+
+						<input class="btn btn-success center-block" type="submit" name="logout" id="logout" value="Odjavi se">
+					</form>
 				</li>
 			</ul>
 	    </aside>

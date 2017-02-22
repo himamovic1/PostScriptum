@@ -153,60 +153,6 @@
 
 			<div class="col-md-3 col-sm-2 hidden-xs"></div>
 		</div>
-
-		<div class="row" style="height: 20px; background-color: red;"></div>
-
-		<div class="row">
-			<div class="col-md-3 col-sm-2 hidden-xs"></div>
-
-			<div class="registration-container panel-shadow col-md-6 col-sm-8 col-xs-12">
-				<div class="form-group">
-					<h2 class="bg-title text-center">Prijava na portal</h2>
-					<p class="text-center">Hvala Vam što koristite Post Scriptum</p>
-				</div>
-
-				<!-- Registration form -->
-				<form class="form-horizontal" id="registration-form">
-					<div id="input-fields-group">
-						<!-- Username -->
-						<div class="form-group">
-							<div class="inputGroupContainer">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="glyphicon glyphicon-eye-open"></i></span>
-									<input type="text" class="form-control" name="username" id="username" placeholder="Korisničko ime" required>
-								</div>
-							</div>
-						</div>
-
-						<!-- Password -->
-						<div class="form-group">
-							<div class="inputGroupContainer">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-									<input type="password" class="form-control" name="password" id="password" placeholder="Šifra" required>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Login with facebook button -->
-					<div class="form-group row">
-						<div class="col-md-3 col-sm-2 hidden-xs"></div>
-						<button type="submit" class="btn btn-primary center-block col-md-6 col-sm-8 col-xs-12">Facebook prijava</button>
-						<div class="col-md-3 col-sm-2 hidden-xs"></div>	
-					</div>
-
-					<!-- Submit Button -->
-					<div class="form-group row">
-						<div class="col-md-3 col-sm-2 hidden-xs"></div>
-						<button type="submit" class="btn btn-success center-block col-md-6 col-sm-8 col-xs-12">Prijava</button>
-						<div class="col-md-3 col-sm-2 hidden-xs"></div>	
-					</div>
-				</form>
-			</div>
-
-			<div class="col-md-3 col-sm-2 hidden-xs"></div>
-		</div>
 	</div>
 
 	<!-- Footer -->
