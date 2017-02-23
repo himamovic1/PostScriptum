@@ -6,6 +6,7 @@ function toggleNavBar() {
 		navBarItems[i].classList.toggle("show");
 }
 
+// Function loads dropdown menu for user dropdown button
 function up() {
 	var dropdownMenu = document.getElementById("usr-dropdown");
 	var xmlhttp;
@@ -31,3 +32,22 @@ function up() {
 	xmlhttp.send();
 	return true;
 }
+
+// Sticky navbar
+$(document).ready(function () {
+
+var menu = $('.main-nav');
+var origOffsetY = menu.offset().top;
+
+function scroll() {
+    if ($(window).scrollTop() >= origOffsetY) {
+        $('.main-nav').addClass('navbar-fixed-top');
+        $('#navbar-right-content').addClass('fix-margin-right');
+    } else {
+        $('.main-nav').removeClass('navbar-fixed-top');
+        $('#navbar-right-content').removeClass('fix-margin-right');
+    }
+   }
+
+  document.onscroll = scroll;
+});

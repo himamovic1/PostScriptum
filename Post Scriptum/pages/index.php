@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="../css/bootstrap.css">
 	<link rel="stylesheet" href="../css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,700" rel="stylesheet">
 </head>
 
 <body>
@@ -31,7 +31,7 @@
 
 		<!-- Banner -->
 		<div class="banner">
-			<h1>Post scriptum</h1>
+			<h2>Post scriptum</h2>
 		</div>
 
 		<!-- Navigation bar -->
@@ -64,12 +64,12 @@
 					<li><a href="lifestyle.php">Lifestyle</a></li>
 				</ul>
 
-				<ul class="nav navbar-nav navbar-right separator-vertical">
+				<ul id="navbar-right-content" class="nav navbar-nav navbar-right separator-vertical">
 					<!-- Search box -->
 					<li>
 						<form>
 							<a href="" class="glyphicon glyphicon-search search-box-top" style="color: #ccc;"></a>							
-							<input type="text" class="search-box-top hidden-md hidden-sm" placeholder="Unesite pojam pretrage...">
+							<input type="text" class="search-box-top hidden-md hidden-sm" placeholder="Unesite pojam pretrage..." maxlength="30">
 						</form>
 					</li>
 
@@ -94,7 +94,7 @@
 						<img src="../img/img1.png" alt="Article image" class="md-image" >
 					</div>
 					<div class="col-md-6 col-sm-8 sm-title-container no-padding">
-						<div class="column category-outlined"><small>Kolumne</small></div>
+						<small class="column category-outlined">Kolumne</small>
 						<h5 class="sm-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h5>
 						
 					</div>
@@ -107,7 +107,19 @@
 						<img src="../img/img1.png" alt="Article image" class="md-image" >
 					</div>
 					<div class="col-md-6 col-sm-8 col-xs-8 sm-title-container no-padding">
-						<div class="column category-outlined"><small>Kolumne</small></div>
+						<small class="column category-outlined">Kolumne</small>
+						<h5 class="sm-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h5>
+					</div>
+				</div>
+			</a>
+
+			<a href="" class="col-md-3">
+				<div class="row">
+					<div class="col-md-6 col-sm-4 col-xs-4">
+						<img src="../img/img1.png" alt="Article image" class="md-image" >
+					</div>
+					<div class="col-md-6 col-sm-8 col-xs-8 sm-title-container no-padding">
+						<small class="column category-outlined">Kolumne</small>
 						<h5 class="sm-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h5>
 						
 					</div>
@@ -120,20 +132,7 @@
 						<img src="../img/img1.png" alt="Article image" class="md-image" >
 					</div>
 					<div class="col-md-6 col-sm-8 col-xs-8 sm-title-container no-padding">
-						<div class="column category-outlined"><small>Kolumne</small></div>
-						<h5 class="sm-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h5>
-						
-					</div>
-				</div>
-			</a>
-
-			<a href="" class="col-md-3">
-				<div class="row">
-					<div class="col-md-6 col-sm-4 col-xs-4">
-						<img src="../img/img1.png" alt="Article image" class="md-image" >
-					</div>
-					<div class="col-md-6 col-sm-8 col-xs-8 sm-title-container no-padding">
-						<div class="column category-outlined"><small>Kolumne</small></div>
+						<small class="column category-outlined">Kolumne</small>
 						<h5 class="sm-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h5>
 						
 					</div>
@@ -154,12 +153,11 @@
 						<img src="../img/img1.png" alt="Article image" class="huge-image">
 
 						<div class="top-story-title-container">
-							<div class="top-story category-filled"><small>Top priča</small></div>
+							<small class="top-story category-filled">Top priča</small>
 							<h3 class="bg-title-inverse">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h3>
-
 							<ul class="time-comments-container">
-								<li><p class="small-txt-inverse"><img src="../icons/clock_white.svg" alt="Time icon" class="timeIcon">09.Februar</p></li>
-								<li><p class="small-txt-inverse"><img src="../icons/comment_white.svg" alt="Comment icon" class="commentIcon">14 Komentara</p></li>
+								<li><small class="small-txt-inverse"><span class="glyphicon glyphicon-time"></span>09. Februar</small></li>
+								<li><small class="small-txt-inverse"><span class="glyphicon glyphicon-comment"></span>14 Komentara</small></li>
 							</ul>
 						</div>
 						
@@ -174,8 +172,12 @@
 							<img src="../img/img1.png" alt="Article image" class="md-top-image">
 
 							<div class="top-story-title-container">
-								<div class="top-story category-filled"><small>Top priča</small></div>
+								<small class="top-story category-filled">Top priča</small>
 								<h4 class="md-title-inverse">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h4>
+								<ul class="time-comments-container">
+									<li><small class="small-txt-inverse"><span class="glyphicon glyphicon-time"></span>Prije 20 minuta</small></li>
+									<li class="navbar-right"><small class="small-txt-inverse"><span class="glyphicon glyphicon-comment"></span>14</small></li>
+								</ul>
 							</div>
 						</div>
 					</a>
@@ -184,8 +186,12 @@
 							<img src="../img/img1.png" alt="Article image" class="md-top-image">
 
 							<div class="top-story-title-container">
-								<div class="top-story category-filled"><small>Top priča</small></div>
+								<small class="top-story category-filled">Top priča</small>
 								<h4 class="md-title-inverse">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h4>
+								<ul class="time-comments-container">
+									<li><small class="small-txt-inverse"><span class="glyphicon glyphicon-time"></span>Prije 20 minuta</small></li>
+									<li class="navbar-right"><small class="small-txt-inverse"><span class="glyphicon glyphicon-comment"></span>14</small></li>
+								</ul>
 							</div>
 						</div>
 					</a>
@@ -196,8 +202,12 @@
 							<img src="../img/img1.png" alt="Article image" class="md-top-image">
 
 							<div class="top-story-title-container">
-								<div class="top-story category-filled"><small>Top priča</small></div>
+								<small class="top-story category-filled">Top priča</small>
 								<h4 class="md-title-inverse">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h4>
+								<ul class="time-comments-container">
+									<li><small class="small-txt-inverse"><span class="glyphicon glyphicon-time"></span>Prije 20 minuta</small></li>
+									<li class="navbar-right"><small class="small-txt-inverse"><span class="glyphicon glyphicon-comment"></span>14</small></li>
+								</ul>
 							</div>
 						</div>
 					</a>
@@ -207,8 +217,12 @@
 							<img src="../img/img1.png" alt="Article image" class="md-top-image">
 
 							<div class="top-story-title-container">
-								<div class="top-story category-filled"><small>Top priča</small></div>
+								<small class="top-story category-filled">Top priča</small>
 								<h4 class="md-title-inverse">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h4>
+								<ul class="time-comments-container">
+									<li><small class="small-txt-inverse"><span class="glyphicon glyphicon-time"></span>Prije 20 minuta</small></li>
+									<li class="navbar-right"><small class="small-txt-inverse"><span class="glyphicon glyphicon-comment"></span>14</small></li>
+								</ul>
 							</div>
 						</div>
 					</a>
@@ -221,16 +235,16 @@
 		<div class="row">
 			<div class="category-header-container col-md-9 col-sm-7 col-xs-12 world_region clearfix">
 				<ul>
-					<li style="float: left;">Politika</li>
-					<li class="category-active world_region">Regija</li>
-					<li class="category-active world_region">BiH</li>
-					<li class="category-active world_region">Svijet</li>
+					<li style="float: left;"><h4><b>Politika</b></h4></li>
+					<li class="category-active world_region"><h5>Regija</h5></li>
+					<li class="category-active world_region"><h5>BiH</h5></li>
+					<li class="category-active world_region"><h5>Svijet</h5></li>
 				</ul>
 				<div class="separator-full clearfix"></div>
 			</div>
 			<div class="category-header-container col-md-3 col-sm-5 hidden-xs world_region clearfix">
 				<ul>
-					<li style="float: left;">Najčitanije</li>
+					<li style="float: left; margin-bottom: 2px;"><h4><b>Najčitanije</b></h4></li>
 				</ul>
 				<div class="separator-full clearfix"></div>
 			</div>
@@ -242,15 +256,15 @@
 					<img src="../img/img1.png" alt="Article image" class="big-image">
 					
 					<div class="big-title-container">
-						<div class="world_region category-outlined"><small>BiH</small></div>
+						<small class="world_region category-outlined">BiH</small>
 						<h2 class="bg-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h2>
-						<p>Organizacioni odbor Diplomatskog bazara 2016 danas je dodijelio 130.000 KM dobrotvornim organizacijama za djecu s potrebama iz Bosne i Hercegovine i to je do sada najveći prikupljeni iznos.</p>
+						<p class="preview">Organizacioni odbor Diplomatskog bazara 2016 danas je dodijelio 130.000 KM dobrotvornim organizacijama za djecu s potrebama iz Bosne i Hercegovine i to je do sada najveći prikupljeni iznos.</p>
 
 						<div class="separator-200" "></div>
 
 						<ul class="time-comments-container">
-							<li><p class="small-txt"><img src="../icons/clock.svg" alt="Time icon" class="timeIcon">09.Februar</p class="small-txt"></li>
-							<li><p class="small-txt"><img src="../icons/comment.svg" alt="Comment icon" class="commentIcon">14 Komentara</p class="small-txt"></li>
+							<li><small><span class="glyphicon glyphicon-time"></span>09. Februar</small></li>
+							<li><small><span class="glyphicon glyphicon-comment"></span>14 Komentara</small></li>
 						</ul>
 					</div>
 				</a>
@@ -260,16 +274,16 @@
 			<div class="article-md col-md-5 col-sm-5 col-xs-12">
 				<a href="">
 					<div class="row">
-						<div class="col-md-3 col-sm-4 col-xs-3">
-							<img src="../img/img1.png" alt="Article image" class="md-image" >
+						<div class="col-md-3 col-sm-4 col-xs-4">
+							<img src="../img/img1.png" alt="Article image" class="md-image">
 						</div>
-						<div class="col-md-9 col-sm-8 col-xs-9 md-title-container">
-							<div class="world_region category-outlined"><small>BiH</small></div>
-							<h5 class="md-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h5>
+						<div class="col-md-9 col-sm-8 col-xs-8 md-title-container">
+							<small class="world_region category-outlined">BiH</small>
+							<h4 class="md-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h4>
 							
-							<ul class="time-comments-container hidden-sm">
-								<li><p class="small-txt"><img src="../icons/clock.svg" alt="Time icon" class="timeIcon">09.Februar</p class="small-txt"></li>
-								<li><p class="small-txt"><img src="../icons/comment.svg" alt="Comment icon" class="commentIcon">14 Komentara</p class="small-txt"></li>
+							<ul class="time-comments-container">
+								<li><small><span class="glyphicon glyphicon-time"></span>09. Februar</small></li>
+								<li><small><span class="glyphicon glyphicon-comment"></span>14</small></li>
 							</ul>
 						</div>
 					</div>
@@ -277,67 +291,64 @@
 
 				<a href="">
 					<div class="row">
-						<div class="col-md-3 col-sm-4 col-xs-3">
-							<img src="../img/img1.png" alt="Article image" class="md-image" >
+						<div class="col-md-3 col-sm-4 col-xs-4">
+							<img src="../img/img1.png" alt="Article image" class="md-image">
 						</div>
-						<div class="col-md-9 col-sm-8 col-xs-9 md-title-container">
-							<div class="world_region category-outlined"><small>BiH</small></div>
-							<h5 class="md-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h5>
+						<div class="col-md-9 col-sm-8 col-xs-8 md-title-container">
+							<small class="world_region category-outlined">BiH</small>
+							<h4 class="md-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h4>
 							
-							<ul class="time-comments-container hidden-sm">
-								<li><p class="small-txt"><img src="../icons/clock.svg" alt="Time icon" class="timeIcon">09.Februar</p class="small-txt"></li>
-								<li><p class="small-txt"><img src="../icons/comment.svg" alt="Comment icon" class="commentIcon">14 Komentara</p class="small-txt"></li>
+							<ul class="time-comments-container">
+								<li><small><span class="glyphicon glyphicon-time"></span>09. Februar</small></li>
+								<li><small><span class="glyphicon glyphicon-comment"></span>14</small></li>
 							</ul>
 						</div>
 					</div>
 				</a>
-				
 				<a href="">
 					<div class="row">
-						<div class="col-md-3 col-sm-4 col-xs-3">
-							<img src="../img/img1.png" alt="Article image" class="md-image" >
+						<div class="col-md-3 col-sm-4 col-xs-4">
+							<img src="../img/img1.png" alt="Article image" class="md-image">
 						</div>
-						<div class="col-md-9 col-sm-8 col-xs-9 md-title-container">
-							<div class="world_region category-outlined"><small>BiH</small></div>
-							<h5 class="md-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h5>
+						<div class="col-md-9 col-sm-8 col-xs-8 md-title-container">
+							<small class="world_region category-outlined">BiH</small>
+							<h4 class="md-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h4>
 							
-							<ul class="time-comments-container hidden-sm">
-								<li><p class="small-txt"><img src="../icons/clock.svg" alt="Time icon" class="timeIcon">09.Februar</p class="small-txt"></li>
-								<li><p class="small-txt"><img src="../icons/comment.svg" alt="Comment icon" class="commentIcon">14 Komentara</p class="small-txt"></li>
+							<ul class="time-comments-container">
+								<li><small><span class="glyphicon glyphicon-time"></span>09. Februar</small></li>
+								<li><small><span class="glyphicon glyphicon-comment"></span>14</small></li>
 							</ul>
 						</div>
 					</div>
 				</a>
-
 				<a href="">
 					<div class="row">
-						<div class="col-md-3 col-sm-4 col-xs-3">
-							<img src="../img/img1.png" alt="Article image" class="md-image" >
+						<div class="col-md-3 col-sm-4 col-xs-4">
+							<img src="../img/img1.png" alt="Article image" class="md-image">
 						</div>
-						<div class="col-md-9 col-sm-8 col-xs-9 md-title-container">
-							<div class="world_region category-outlined"><small>BiH</small></div>
-							<h5 class="md-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h5>
+						<div class="col-md-9 col-sm-8 col-xs-8 md-title-container">
+							<small class="world_region category-outlined">BiH</small>
+							<h4 class="md-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h4>
 							
-							<ul class="time-comments-container hidden-sm">
-								<li><p class="small-txt"><img src="../icons/clock.svg" alt="Time icon" class="timeIcon">09.Februar</p class="small-txt"></li>
-								<li><p class="small-txt"><img src="../icons/comment.svg" alt="Comment icon" class="commentIcon">14 Komentara</p class="small-txt"></li>
+							<ul class="time-comments-container">
+								<li><small><span class="glyphicon glyphicon-time"></span>09. Februar</small></li>
+								<li><small><span class="glyphicon glyphicon-comment"></span>14</small></li>
 							</ul>
 						</div>
 					</div>
 				</a>
-
 				<a href="">
 					<div class="row">
-						<div class="col-md-3 col-sm-4 col-xs-3">
-							<img src="../img/img1.png" alt="Article image" class="md-image" >
+						<div class="col-md-3 col-sm-4 col-xs-4">
+							<img src="../img/img1.png" alt="Article image" class="md-image">
 						</div>
-						<div class="col-md-9 col-sm-8 col-xs-9 md-title-container">
-							<div class="world_region category-outlined"><small>BiH</small></div>
-							<h5 class="md-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h5>
+						<div class="col-md-9 col-sm-8 col-xs-8 md-title-container">
+							<small class="world_region category-outlined">BiH</small>
+							<h4 class="md-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h4>
 							
-							<ul class="time-comments-container hidden-sm">
-								<li><p class="small-txt"><img src="../icons/clock.svg" alt="Time icon" class="timeIcon">09.Februar</p class="small-txt"></li>
-								<li><p class="small-txt"><img src="../icons/comment.svg" alt="Comment icon" class="commentIcon">14 Komentara</p class="small-txt"></li>
+							<ul class="time-comments-container">
+								<li><small><span class="glyphicon glyphicon-time"></span>09. Februar</small></li>
+								<li><small><span class="glyphicon glyphicon-comment"></span>14</small></li>
 							</ul>
 						</div>
 					</div>
@@ -352,14 +363,14 @@
 				<a href="">
 					<div class="row">
 						<div class="col-xs-12">
-							<div class="world_region category-outlined"><small>BiH</small></div>
+							<small class="world_region category-outlined">BiH</small>
 							<h5 class="md-title">Koridor 5C kroz Hercegovinu: Ratnom linijom razgraničenja i protiv interesa stanovništva</h5>
 
-							<div class="separator-200 clearfix"></div>
 							<ul class="time-comments-container">
-								<li><p class="small-txt"><img src="../icons/clock.svg" alt="Time icon" class="timeIcon">09.Februar</p class="small-txt"></li>
-								<li><p class="small-txt"><img src="../icons/comment.svg" alt="Comment icon" class="commentIcon">14 Komentara</p class="small-txt"></li>
+								<li><small><span class="glyphicon glyphicon-time"></span>09. Februar</small></li>
+								<li><small><span class="glyphicon glyphicon-comment"></span>14</small></li>
 							</ul>
+							<div class="separator-200 clearfix"></div>
 						</div>
 					</div>
 				</a>
@@ -367,14 +378,14 @@
 				<a href="">
 					<div class="row">
 						<div class="col-xs-12">
-							<div class="world_region category-outlined"><small>BiH</small></div>
+							<small class="world_region category-outlined">BiH</small>
 							<h5 class="md-title">Koridor 5C kroz Hercegovinu: Ratnom linijom razgraničenja i protiv interesa stanovništva</h5>
 
-							<div class="separator-200 clearfix"></div>
 							<ul class="time-comments-container">
-								<li><p class="small-txt"><img src="../icons/clock.svg" alt="Time icon" class="timeIcon">09.Februar</p class="small-txt"></li>
-								<li><p class="small-txt"><img src="../icons/comment.svg" alt="Comment icon" class="commentIcon">14 Komentara</p class="small-txt"></li>
+								<li><small><span class="glyphicon glyphicon-time"></span>09. Februar</small></li>
+								<li><small><span class="glyphicon glyphicon-comment"></span>14 Komentara</small></li>
 							</ul>
+							<div class="separator-200 clearfix"></div>
 						</div>
 					</div>
 				</a>
@@ -382,14 +393,14 @@
 				<a href="">
 					<div class="row">
 						<div class="col-xs-12">
-							<div class="world_region category-outlined"><small>BiH</small></div>
+							<small class="world_region category-outlined">BiH</small>
 							<h5 class="md-title">Koridor 5C kroz Hercegovinu: Ratnom linijom razgraničenja i protiv interesa stanovništva</h5>
 
-							<div class="separator-200 clearfix"></div>
 							<ul class="time-comments-container">
-								<li><p class="small-txt"><img src="../icons/clock.svg" alt="Time icon" class="timeIcon">09.Februar</p class="small-txt"></li>
-								<li><p class="small-txt"><img src="../icons/comment.svg" alt="Comment icon" class="commentIcon">14 Komentara</p class="small-txt"></li>
+								<li><small><span class="glyphicon glyphicon-time"></span>09. Februar</small></li>
+								<li><small><span class="glyphicon glyphicon-comment"></span>14 Komentara</small></li>
 							</ul>
+							<div class="separator-200 clearfix"></div>
 						</div>
 					</div>
 				</a>
@@ -397,14 +408,14 @@
 				<a href="">
 					<div class="row">
 						<div class="col-xs-12">
-							<div class="world_region category-outlined"><small>BiH</small></div>
+							<small class="world_region category-outlined">BiH</small>
 							<h5 class="md-title">Koridor 5C kroz Hercegovinu: Ratnom linijom razgraničenja i protiv interesa stanovništva</h5>
 
-							<div class="separator-200 clearfix"></div>
 							<ul class="time-comments-container">
-								<li><p class="small-txt"><img src="../icons/clock.svg" alt="Time icon" class="timeIcon">09.Februar</p class="small-txt"></li>
-								<li><p class="small-txt"><img src="../icons/comment.svg" alt="Comment icon" class="commentIcon">14 Komentara</p class="small-txt"></li>
+								<li><small><span class="glyphicon glyphicon-time"></span>09. Februar</small></li>
+								<li><small><span class="glyphicon glyphicon-comment"></span>14 Komentara</small></li>
 							</ul>
+							<div class="separator-200 clearfix"></div>
 						</div>
 					</div>
 				</a>
@@ -416,17 +427,17 @@
 		<div class="row">
 			<div class="category-header-container col-md-9 col-sm-7 col-xs-12 sport clearfix">
 				<ul>
-					<li style="float: left;">Sport</li>
-					<li class="category-active sport"><span>Ostalo</span></li>
-					<li class="category-inactive grey">Zimski sportovi</li>
-					<li class="category-active sport">Košarka</li>
-					<li class="category-active sport">Fudbal</li>
+					<li style="float: left;"><h4><b>Sport</b></h4></li>
+					<li class="category-active sport"><h5>Ostalo</h5></li>
+					<li class="category-inactive grey"><h5>Zimski sportovi</h5></li>
+					<li class="category-active sport"><h5>Košarka</h5></li>
+					<li class="category-active sport"><h5>Fudbal</h5></li>
 				</ul>
 				<div class="separator-full clearfix"></div>
 			</div>
 			<div class="category-header-container col-md-3 col-sm-5 hidden-xs sport clearfix">
 				<ul>
-					<li style="float: left;">Najčitanije</li>
+					<li style="float: left; margin-bottom: 2px;"><h4><b>Najčitanije</b></h4></li>
 				</ul>
 				<div class="separator-full clearfix"></div>
 			</div>
@@ -438,15 +449,15 @@
 					<img src="../img/img1.png" alt="Article image" class="big-image">
 					
 					<div class="big-title-container">
-						<div class="sport category-outlined"><small>NOGOMET</small></div>
+						<small class="sport category-outlined">NOGOMET</small>
 						<h2 class="bg-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h2>
-						<p>Organizacioni odbor Diplomatskog bazara 2016 danas je dodijelio 130.000 KM dobrotvornim organizacijama za djecu s potrebama iz Bosne i Hercegovine i to je do sada najveći prikupljeni iznos.</p>
+						<p class="preview">Organizacioni odbor Diplomatskog bazara 2016 danas je dodijelio 130.000 KM dobrotvornim organizacijama za djecu s potrebama iz Bosne i Hercegovine i to je do sada najveći prikupljeni iznos.</p>
 
 						<div class="separator-200" "></div>
 
 						<ul class="time-comments-container">
-							<li><p class="small-txt"><img src="../icons/clock.svg" alt="Time icon" class="timeIcon">09.Februar</p class="small-txt"></li>
-							<li><p class="small-txt"><img src="../icons/comment.svg" alt="Comment icon" class="commentIcon">14 Komentara</p class="small-txt"></li>
+							<li><small><span class="glyphicon glyphicon-time"></span>09. Februar</small></li>
+							<li><small><span class="glyphicon glyphicon-comment"></span>14 Komentara</small></li>
 						</ul>
 					</div>
 				</a>
@@ -460,12 +471,12 @@
 							<img src="../img/img1.png" alt="Article image" class="md-image" >
 						</div>
 						<div class="col-md-9  col-xs-8 md-title-container">
-							<div class="sport category-outlined"><small>NOGOMET</small></div>
+							<small class="sport category-outlined">NOGOMET</small>
 							<h5 class="md-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h5>
 							
-							<ul class="time-comments-container hidden-sm">
-								<li><p class="small-txt"><img src="../icons/clock.svg" alt="Time icon" class="timeIcon">09.Februar</p class="small-txt"></li>
-								<li><p class="small-txt"><img src="../icons/comment.svg" alt="Comment icon" class="commentIcon">14 Komentara</p class="small-txt"></li>
+							<ul class="time-comments-container">
+								<li><small><span class="glyphicon glyphicon-time"></span>09. Februar</small></li>
+								<li><small><span class="glyphicon glyphicon-comment"></span>14</small></li>
 							</ul>
 						</div>
 					</div>
@@ -477,12 +488,12 @@
 							<img src="../img/img1.png" alt="Article image" class="md-image" >
 						</div>
 						<div class="col-md-9  col-xs-8 md-title-container">
-							<div class="sport category-outlined"><small>NOGOMET</small></div>
+							<small class="sport category-outlined">NOGOMET</small>
 							<h5 class="md-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h5>
 							
-							<ul class="time-comments-container hidden-sm">
-								<li><p class="small-txt"><img src="../icons/clock.svg" alt="Time icon" class="timeIcon">09.Februar</p class="small-txt"></li>
-								<li><p class="small-txt"><img src="../icons/comment.svg" alt="Comment icon" class="commentIcon">14 Komentara</p class="small-txt"></li>
+							<ul class="time-comments-container">
+								<li><small><span class="glyphicon glyphicon-time"></span>09. Februar</small></li>
+								<li><small><span class="glyphicon glyphicon-comment"></span>14</small></li>
 							</ul>
 						</div>
 					</div>
@@ -494,12 +505,12 @@
 							<img src="../img/img1.png" alt="Article image" class="md-image" >
 						</div>
 						<div class="col-md-9  col-xs-8 md-title-container">
-							<div class="sport category-outlined"><small>NOGOMET</small></div>
+							<small class="sport category-outlined">NOGOMET</small>
 							<h5 class="md-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h5>
 							
-							<ul class="time-comments-container hidden-sm">
-								<li><p class="small-txt"><img src="../icons/clock.svg" alt="Time icon" class="timeIcon">09.Februar</p class="small-txt"></li>
-								<li><p class="small-txt"><img src="../icons/comment.svg" alt="Comment icon" class="commentIcon">14 Komentara</p class="small-txt"></li>
+							<ul class="time-comments-container">
+								<li><small><span class="glyphicon glyphicon-time"></span>09. Februar</small></li>
+								<li><small><span class="glyphicon glyphicon-comment"></span>14</small></li>
 							</ul>
 						</div>
 					</div>
@@ -511,12 +522,12 @@
 							<img src="../img/img1.png" alt="Article image" class="md-image" >
 						</div>
 						<div class="col-md-9  col-xs-8 md-title-container">
-							<div class="sport category-outlined"><small>NOGOMET</small></div>
+							<small class="sport category-outlined">NOGOMET</small>
 							<h5 class="md-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h5>
 							
-							<ul class="time-comments-container hidden-sm">
-								<li><p class="small-txt"><img src="../icons/clock.svg" alt="Time icon" class="timeIcon">09.Februar</p class="small-txt"></li>
-								<li><p class="small-txt"><img src="../icons/comment.svg" alt="Comment icon" class="commentIcon">14 Komentara</p class="small-txt"></li>
+							<ul class="time-comments-container">
+								<li><small><span class="glyphicon glyphicon-time"></span>09. Februar</small></li>
+								<li><small><span class="glyphicon glyphicon-comment"></span>14</small></li>
 							</ul>
 						</div>
 					</div>
@@ -528,12 +539,12 @@
 							<img src="../img/img1.png" alt="Article image" class="md-image" >
 						</div>
 						<div class="col-md-9  col-xs-8 md-title-container">
-							<div class="sport category-outlined"><small>NOGOMET</small></div>
+							<small class="sport category-outlined">NOGOMET</small>
 							<h5 class="md-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h5>
 							
-							<ul class="time-comments-container hidden-sm">
-								<li><p class="small-txt"><img src="../icons/clock.svg" alt="Time icon" class="timeIcon">09.Februar</p class="small-txt"></li>
-								<li><p class="small-txt"><img src="../icons/comment.svg" alt="Comment icon" class="commentIcon">14 Komentara</p class="small-txt"></li>
+							<ul class="time-comments-container">
+								<li><small><span class="glyphicon glyphicon-time"></span>09. Februar</small></li>
+								<li><small><span class="glyphicon glyphicon-comment"></span>14</small></li>
 							</ul>
 						</div>
 					</div>
@@ -553,9 +564,10 @@
 							<h5 class="md-title">Koridor 5C kroz Hercegovinu: Ratnom linijom razgraničenja i protiv interesa stanovništva</h5>
 
 							<ul class="time-comments-container">
-								<li><p class="small-txt"><img src="../icons/clock.svg" alt="Time icon" class="timeIcon">09.Februar</p class="small-txt"></li>
-								<li><p class="small-txt"><img src="../icons/comment.svg" alt="Comment icon" class="commentIcon">14 Komentara</p class="small-txt"></li>
+								<li><small><span class="glyphicon glyphicon-time"></span>09. Februar</small></li>
+								<li><small><span class="glyphicon glyphicon-comment"></span>14</small></li>
 							</ul>
+							<div class="separator-200 clearfix"></div>
 						</div>
 					</div>
 				</a>
@@ -567,9 +579,10 @@
 							<h5 class="md-title">Koridor 5C kroz Hercegovinu: Ratnom linijom razgraničenja i protiv interesa stanovništva</h5>
 
 							<ul class="time-comments-container">
-								<li><p class="small-txt"><img src="../icons/clock.svg" alt="Time icon" class="timeIcon">09.Februar</p class="small-txt"></li>
-								<li><p class="small-txt"><img src="../icons/comment.svg" alt="Comment icon" class="commentIcon">14 Komentara</p class="small-txt"></li>
+								<li><small><span class="glyphicon glyphicon-time"></span>09. Februar</small></li>
+								<li><small><span class="glyphicon glyphicon-comment"></span>14</small></li>
 							</ul>
+							<div class="separator-200 clearfix"></div>
 						</div>
 					</div>
 				</a>
@@ -581,9 +594,10 @@
 							<h5 class="md-title">Koridor 5C kroz Hercegovinu: Ratnom linijom razgraničenja i protiv interesa stanovništva</h5>
 
 							<ul class="time-comments-container">
-								<li><p class="small-txt"><img src="../icons/clock.svg" alt="Time icon" class="timeIcon">09.Februar</p class="small-txt"></li>
-								<li><p class="small-txt"><img src="../icons/comment.svg" alt="Comment icon" class="commentIcon">14 Komentara</p class="small-txt"></li>
+								<li><small><span class="glyphicon glyphicon-time"></span>09. Februar</small></li>
+								<li><small><span class="glyphicon glyphicon-comment"></span>14</small></li>
 							</ul>
+							<div class="separator-200 clearfix"></div>
 						</div>
 					</div>
 				</a>
@@ -595,26 +609,14 @@
 							<h5 class="md-title">Koridor 5C kroz Hercegovinu: Ratnom linijom razgraničenja i protiv interesa stanovništva</h5>
 
 							<ul class="time-comments-container">
-								<li><p class="small-txt"><img src="../icons/clock.svg" alt="Time icon" class="timeIcon">09.Februar</p class="small-txt"></li>
-								<li><p class="small-txt"><img src="../icons/comment.svg" alt="Comment icon" class="commentIcon">14 Komentara</p class="small-txt"></li>
+								<li><small><span class="glyphicon glyphicon-time"></span>09. Februar</small></li>
+								<li><small><span class="glyphicon glyphicon-comment"></span>14</small></li>
 							</ul>
+							<div class="separator-200 clearfix"></div>
 						</div>
 					</div>
 				</a>
 
-				<a href="">
-					<div class="row">
-						<div class="col-xs-12">
-							<div class="sport category-outlined"><small>NOGOMET</small></div>
-							<h5 class="md-title">Koridor 5C kroz Hercegovinu: Ratnom linijom razgraničenja i protiv interesa stanovništva</h5>
-
-							<ul class="time-comments-container">
-								<li><p class="small-txt"><img src="../icons/clock.svg" alt="Time icon" class="timeIcon">09.Februar</p class="small-txt"></li>
-								<li><p class="small-txt"><img src="../icons/comment.svg" alt="Comment icon" class="commentIcon">14 Komentara</p class="small-txt"></li>
-							</ul>
-						</div>
-					</div>
-				</a>
 			</div>
 		</section>
 
@@ -623,12 +625,12 @@
 		<div class="row">
 			<div class="category-header-container col-md-12 col-sm-12 col-xs-12 lifestyle clearfix">
 				<ul>
-					<li style="float: left;">Lifestyle</li>
-					<li class="category-active lifestyle">Kultura</li>
-					<li class="category-active lifestyle">Muzika</li>
-					<li class="category-active lifestyle">Film</li>
-					<li class="category-active lifestyle">Moda i ljepota</li>
-					<li class="category-active lifestyle">Zdravlje</li>
+					<li style="float: left;"><h4><b>Lifestyle</b></h4></li>
+					<li class="category-active lifestyle"><h5>Kultura</h5></li>
+					<li class="category-active lifestyle"><h5>Muzika</h5></li>
+					<li class="category-active lifestyle"><h5>Film</h5></li>
+					<li class="category-active lifestyle"><h5>Moda i ljepota</h5></li>
+					<li class="category-active lifestyle"><h5>Zdravlje</h5></li>
 				</ul>
 				<div class="separator-full clearfix"></div>
 			</div>
@@ -646,9 +648,9 @@
 						<div class="separator-200" "></div>
 
 						<ul class="time-comments-container">
-							<li><p class="small-txt"><img src="../icons/clock.svg" alt="Time icon" class="timeIcon">09.Februar</p class="small-txt"></li>
-							<li><p class="small-txt"><img src="../icons/comment.svg" alt="Comment icon" class="commentIcon">14 Komentara</p class="small-txt"></li>
-						</ul>
+							<li><small><span class="glyphicon glyphicon-time"></span>09. Februar</small></li>
+							<li><small><span class="glyphicon glyphicon-comment"></span>14</small></li>
+						</ul>	
 					</div>
 				</a>
 			</article>
@@ -665,9 +667,9 @@
 						<div class="separator-200" "></div>
 
 						<ul class="time-comments-container">
-							<li><p class="small-txt"><img src="../icons/clock.svg" alt="Time icon" class="timeIcon">09.Februar</p class="small-txt"></li>
-							<li><p class="small-txt"><img src="../icons/comment.svg" alt="Comment icon" class="commentIcon">14 Komentara</p class="small-txt"></li>
-						</ul>
+							<li><small><span class="glyphicon glyphicon-time"></span>09. Februar</small></li>
+							<li><small><span class="glyphicon glyphicon-comment"></span>14</small></li>
+						</ul>	
 					</div>
 				</a>
 			</article>
@@ -684,9 +686,9 @@
 						<div class="separator-200" "></div>
 
 						<ul class="time-comments-container">
-							<li><p class="small-txt"><img src="../icons/clock.svg" alt="Time icon" class="timeIcon">09.Februar</p class="small-txt"></li>
-							<li><p class="small-txt"><img src="../icons/comment.svg" alt="Comment icon" class="commentIcon">14 Komentara</p class="small-txt"></li>
-						</ul>
+							<li><small><span class="glyphicon glyphicon-time"></span>09. Februar</small></li>
+							<li><small><span class="glyphicon glyphicon-comment"></span>14</small></li>
+						</ul>	
 					</div>
 				</a>
 			</article>		

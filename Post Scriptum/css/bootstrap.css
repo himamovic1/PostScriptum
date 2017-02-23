@@ -1103,7 +1103,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #23527c;
+  /*color: #23527c;*/
   text-decoration: underline;
 }
 a:focus {
@@ -1265,27 +1265,27 @@ h6 .small,
 }
 h1,
 .h1 {
-  font-size: 36px;
+  font-size: 2.25em;
 }
 h2,
 .h2 {
-  font-size: 27px;
+  font-size: 1.6875em;
 }
 h3,
 .h3 {
-  font-size: 24px;
+  font-size: 1.5em;
 }
 h4,
 .h4 {
-  font-size: 16px;
+  font-size: 1.2em;
 }
 h5,
 .h5 {
-  font-size: 14px;
+  font-size: 1.1em;
 }
 h6,
 .h6 {
-  font-size: 12px;
+  font-size: 0.9em;
 }
 p {
   margin: 0 0 10px;
@@ -4519,7 +4519,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #555;
-  background-color: #e7e7e7;
+  background-color: #eaebed;
+  font-weight: 500;
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
