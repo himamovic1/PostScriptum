@@ -68,13 +68,11 @@
 	</header>
 
 	<!-- Main Content Container -->
-	<div class="container">
+	<div class="container" style="padding: 2em 0 4em 0;">
 		<div class="row">
 			<div class="col-md-3 col-sm-2 hidden-xs"></div>
 
 			<div class="col-md-6 col-sm-8 col-xs-12">
-				
-
 				<div class="registration-container panel-shadow">
 					<div class="form-group">
 						<h2 class="bg-title text-center">Prijava na portal</h2>
@@ -86,7 +84,7 @@
 
 						<!-- Processing form data -->
 						<?php 
-							include('aditionalScripts.php');
+							include('../php/aditionalScripts.php');
 							session_start();
 							
 							$username = $password = $errorMsg = '';

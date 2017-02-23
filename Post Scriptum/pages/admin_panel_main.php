@@ -16,7 +16,7 @@
 </head>
 <body>
 	<?php 
-		include('aditionalScripts.php');
+		include('../php/aditionalScripts.php');
 		session_start();
 
 		if(!accessControlAdmin()) {
