@@ -7,80 +7,102 @@
 	<meta name="description" content="Post Scriptum novinski portal pocetna">
 	<meta name="keywords" content="sarajevo,vijesti,novine,portal">
 
-	<title>Post Scriptum - Pocetna</title>
+	<title>Post Scriptum - O nama</title>
 
 	<link rel="stylesheet" href="../css/bootstrap.css">
 	<link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet" href="../css/style_about.css">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,700" rel="stylesheet">
 </head>
 
 <body>
 	<!-- Header -->
 	<header>
-		<!-- Banner 
-		<div class="banner">
-			<h1>Post scriptum</h1>
-		</div>
-		-->
-
 		<!-- Navigation bar -->
 		<nav class="navbar navbar-default main-nav">
 		  <div class="container">
 
 		    <!-- Logo and toggle -->
 		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-		        <span class="sr-only">Toggle navigation</span>
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only"></span>
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a href="index.php"><img class="navbar-brand" src="../icons/postscriptumlogo.svg"></a>
+
+		      <a href="index.php"><img class="navbar-brand" src="../icons/postscriptumlogo.svg"></a>      
 		    </div>
 
 		    <!-- Navigation content -->
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		    <div class="collapse navbar-collapse" id="navbar-collapse-1">
 				<ul class="nav navbar-nav">
 					<li><a href="index.php">Početna</a></li>
 					<li><a href="top_price.php">Top priče</a></li>
 					<li><a href="kolumne.php">Kolumne</a></li>
 					<li><a href="vijesti.php">Vijesti</a></li>
-					<li><a href="politika.php">Politika</a></li>
-					<li><a href="sport.php">Sport</a></li>
-					<li><a href="lifestyle.php">Lifestyle</a></li>
+					<li class="dropdown">
+						<a href="politika.php">Politika</a><button class="dropdown-toggle hidden-md hidden-lg" data-toggle="dropdown"><span class="caret"></span></button>
+						<ul class="dropdown-menu">
+			                <li><a href="#">Svijet</a></li>
+			                <li><a href="#">BiH</a></li>
+			                <li><a href="#">Regija</a></li>
+			            </ul>
+					</li>
+					<li class="dropdown">
+						<a href="sport.php">Sport</a><button class="dropdown-toggle hidden-md hidden-lg" data-toggle="dropdown"><span class="caret"></span></button>
+						<ul class="dropdown-menu">
+			                <li><a href="#">Fudbal</a></li>
+			                <li><a href="#">Košarka</a></li>
+			                <li><a href="#">Zimski sportovi</a></li>
+			                <li><a href="#">Ostalo</a></li>
+			            </ul>
+					</li>
+					<li class="dropdown">
+						<a href="lifestyle.php">Lifestyle</a><button class="dropdown-toggle hidden-md hidden-lg" data-toggle="dropdown"><span class="caret"></span></button>
+						<ul class="dropdown-menu">
+			                <li><a href="#">Zdravlje</a></li>
+			                <li><a href="#">Moda i ljepota</a></li>
+			                <li><a href="#">Film</a></li>
+			                <li><a href="#">Muzika</a></li>
+			                <li><a href="#">Kultura</a></li>
+			            </ul>
+					</li>
 				</ul>
 
-				<ul class="nav navbar-nav navbar-right separator-vertical">
+				<ul id="navbar-right-content" class="nav navbar-nav navbar-right separator-vertical hidden-sm hidden-xs">
 					<!-- Search box -->
 					<li>
 						<form>
 							<a href="" class="glyphicon glyphicon-search search-box-top" style="color: #ccc;"></a>							
-							<input type="text" class="search-box-top hidden-md hidden-sm" placeholder="Unesite pojam pretrage...">
+							<input type="text" class="search-box-top hidden-md hidden-sm" placeholder="Unesite pojam pretrage..." maxlength="65">
 						</form>
 					</li>
+
 					<!-- User login/registration button -->
-					<li class="login-icon">
-						<a href="#"><span class="glyphicon glyphicon-user grey"></span></a>
+					<li id="usr-dropdown" class="login-icon dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" onclick="return up()"><span class="glyphicon glyphicon-user grey"></span></a>
 					</li>
 				</ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container -->
 		</nav>
-	</header>
 
-	<!-- Heading -->
-	<div id="about-heading" class="text-center">
-		<div id="overlay">
-			<h5 class="bg-title-inverse">Post Scriptum</h5>	
-			<p>O Nama</p>
+		<!-- Banner -->
+		<div id="about-heading" class="text-center">
+			<div id="overlay">
+				<h2 class="bg-title-inverse">Post Scriptum</h2>	
+				<p>O nama</p>
+			</div>
 		</div>
-	</div>
+	</header>
 
 	<!-- Main Content container -->
 	<div class="container">
 		<div class="row text-center about-content-container">
-			<h5 class="bg-title">Historija</h5>	
-			<p>
+			<h2 class="bg-title">Historija</h2>	
+			<p class="main-article-text">
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -91,8 +113,8 @@
 		</div>
 
 		<div class="row text-center about-content-container">
-			<h5 class="bg-title">Redakcija</h5>	
-			<p>
+			<h2 class="bg-title">Redakcija</h2>	
+			<p class="main-article-text">
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -103,8 +125,8 @@
 		</div>
 
 		<div class="row text-center about-content-container">
-			<h5 class="bg-title">Sadržaj</h5>	
-			<p>
+			<h2 class="bg-title">Sadržaj</h2>	
+			<p class="main-article-text">
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -129,13 +151,23 @@
 					<li><a href="#">Dojavi vijest</a></li>
 					<li><a href="#">Uslovi korištenja</a></li>
 				</ul>
-			</div>
+
+				<ul class="nav navbar-nav navbar-right hidden-xs hidden-sm">
+					<li><a href="#"><span class="icon-facebook-with-circle"></span></a></li>
+					<li><a href="#"><span class="icon-twitter-with-circle"></span></a></li>
+				</ul>
 		</nav>
+		<div class="copyright-container">
+			<div class="container">
+				<p>&copy;&nbsp;Copyright 2017 Post Scriptum - Sva prava zadržana.</p>
+			</div>
+		</div>
 	</footer>
 
 	<!-- Additional JavaScript files -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="../js/bootstrap.js"></script>
+	<script src="../js/javascript.js"></script>
 </body>
 
 </html>

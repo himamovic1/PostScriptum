@@ -4,24 +4,28 @@
 }
 
 #about-heading {
+
 	background: url('../img/people.jpg');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
+	color: #eee;
 }
 
-#about-heading h5 {
+#about-heading h2 {
+	font-family: 'Playfair Display', serif;
 	text-transform: uppercase;
+	letter-spacing: 2px;
 	font-size: 3em;
 }
 
 #about-heading p {
-	font-size: 2em;
-	color: #fff;
+	margin-top: 1em;
+	font-size: 1.65em;
 }
 
 #overlay {
-	background-color: rgba(7, 60, 91, 0.7);
+	background-color: rgba(16, 86, 125, 0.7);
 	padding: 8em 0;
 }
 
@@ -32,3 +36,4 @@
 #contact-table {
 	margin: 5em 0;
 }
+

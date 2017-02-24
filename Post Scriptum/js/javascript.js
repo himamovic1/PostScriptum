@@ -51,3 +51,27 @@ function scroll() {
 
   document.onscroll = scroll;
 });
+
+// Hover dropdown
+function hoverOn() {
+	$(this).addClass('open');
+	$(this).find('.dropdown-toggle').attr('aria-expanded', true);
+};
+function hoverOff() {
+	$(this).removeClass('open');
+	$(this).find('.dropdown-toggle').attr('aria-expanded', false);
+};
+
+$(document).on('mouseenter', 'ul.nav li.dropdown', hoverOn);
+$(document).on('mouseleave', 'ul.nav li.dropdown', hoverOff);
+
+$(window).on('resize', function(){
+    if ($(window).width() > 900) {
+		$(document).on('mouseenter', 'ul.nav li.dropdown', hoverOn);
+		$(document).on('mouseleave', 'ul.nav li.dropdown', hoverOff);
+    }
+    else {
+    	$(document).off('mouseenter', 'ul.nav li.dropdown', hoverOn);
+    	$(document).off('mouseleave', 'ul.nav li.dropdown', hoverOff);
+    }
+});

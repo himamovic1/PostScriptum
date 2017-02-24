@@ -18,11 +18,13 @@
 
 		if( strtolower($_SESSION['role']) == 'member' ){
 			echo '<li><a href="korisnicki_profil.php">Postavke profila</a></li>
+				  <li class="divider"></li>
 				  <li><a href="../php/odjava.php">Odjava</a></li>';
 		}
 		elseif( strtolower($_SESSION['role']) == 'admin' ) {
 			echo '<li><a href="admin_panel_main.php">Postavke profila</a></li>
 				  <li><a href="#">Nova vijest</a></li>
+				  <li class="divider"></li>
 				  <li><a href="../php/odjava.php">Odjava</a></li>';
 		}
 		//$_SESSION['username']

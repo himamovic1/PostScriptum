@@ -22,16 +22,17 @@
 		<div id="top-bar" class="container hidden-xs">
 			<ul class="row">
 				<li><a href="o_nama.html">O nama</a></li>
-				<li><a href="top_price.php">Marketing</a></li>
-				<li><a href="kolumne.php">Kontakt</a></li>
+				<li><a href="impressum.html">Marketing</a></li>
+				<li><a href="impressum.html">Kontakt</a></li>
 				<li class="navbar-right"><a href="#"><span class="icon-facebook-with-circle"></span></a></li>
 				<li class="navbar-right"><a href="#"><span class="icon-twitter-with-circle"></span></a></li>
 			</ul>
 		</div>
 
 		<!-- Banner -->
-		<div class="banner">
+		<div class="banner banner-home">
 			<h2>Post scriptum</h2>
+			<p>Početna</p>
 		</div>
 
 		<!-- Navigation bar -->
@@ -41,13 +42,13 @@
 		    <!-- Logo and toggle -->
 		    <div class="navbar-header">
 		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
-		        <span class="sr-only">Toggle navigation</span>
+		        <span class="sr-only"></span>
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
 
-		      <a href="index.php"><img class="navbar-brand" src="../icons/postscriptumlogo.svg"></a>
+		      <a href="index.php"><img class="navbar-brand" src="../icons/postscriptumlogo.svg"></a>      
 		    </div>
 
 		    <!-- Navigation content -->
@@ -59,17 +60,41 @@
 					<li><a href="top_price.php">Top priče</a></li>
 					<li><a href="kolumne.php">Kolumne</a></li>
 					<li><a href="vijesti.php">Vijesti</a></li>
-					<li><a href="politika.php">Politika</a></li>
-					<li><a href="sport.php">Sport</a></li>
-					<li><a href="lifestyle.php">Lifestyle</a></li>
+					<li class="dropdown">
+						<a href="politika.php">Politika</a><button class="dropdown-toggle hidden-md hidden-lg" data-toggle="dropdown"><span class="caret"></span></button>
+						<ul class="dropdown-menu">
+			                <li><a href="#">Svijet</a></li>
+			                <li><a href="#">BiH</a></li>
+			                <li><a href="#">Regija</a></li>
+			            </ul>
+					</li>
+					<li class="dropdown">
+						<a href="sport.php">Sport</a><button class="dropdown-toggle hidden-md hidden-lg" data-toggle="dropdown"><span class="caret"></span></button>
+						<ul class="dropdown-menu">
+			                <li><a href="#">Fudbal</a></li>
+			                <li><a href="#">Košarka</a></li>
+			                <li><a href="#">Zimski sportovi</a></li>
+			                <li><a href="#">Ostalo</a></li>
+			            </ul>
+					</li>
+					<li class="dropdown">
+						<a href="lifestyle.php">Lifestyle</a><button class="dropdown-toggle hidden-md hidden-lg" data-toggle="dropdown"><span class="caret"></span></button>
+						<ul class="dropdown-menu">
+			                <li><a href="#">Zdravlje</a></li>
+			                <li><a href="#">Moda i ljepota</a></li>
+			                <li><a href="#">Film</a></li>
+			                <li><a href="#">Muzika</a></li>
+			                <li><a href="#">Kultura</a></li>
+			            </ul>
+					</li>
 				</ul>
 
-				<ul id="navbar-right-content" class="nav navbar-nav navbar-right separator-vertical">
+				<ul id="navbar-right-content" class="nav navbar-nav navbar-right separator-vertical hidden-sm hidden-xs">
 					<!-- Search box -->
 					<li>
 						<form>
 							<a href="" class="glyphicon glyphicon-search search-box-top" style="color: #ccc;"></a>							
-							<input type="text" class="search-box-top hidden-md hidden-sm" placeholder="Unesite pojam pretrage..." maxlength="30">
+							<input type="text" class="search-box-top hidden-md hidden-sm" placeholder="Unesite pojam pretrage..." maxlength="65">
 						</form>
 					</li>
 
@@ -86,64 +111,63 @@
 	<!-- Columns section -->
 	<div class="columns-container hidden-sm hidden-xs">
 		<div class="container">
-		
-		<section class="row">
-			<a href="" class="col-md-3">
-				<div class="row">
-					<div class="col-md-6 col-sm-4">
-						<img src="../img/img1.png" alt="Article image" class="md-image" >
+			<section class="row">
+				<a href="" class="col-md-3">
+					<div class="row">
+						<div class="col-md-6 col-sm-4">
+							<img src="../img/img1.png" alt="Article image" class="md-image" >
+						</div>
+						<div class="col-md-6 col-sm-8 sm-title-container no-padding">
+							<small class="column category-outlined">Kolumne</small>
+							<h5 class="sm-title">Organizatori Diplomatskog bazara uručili 130.000 KM</h5>
+							
+						</div>
 					</div>
-					<div class="col-md-6 col-sm-8 sm-title-container no-padding">
-						<small class="column category-outlined">Kolumne</small>
-						<h5 class="sm-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h5>
-						
-					</div>
-				</div>
-			</a>
+				</a>
 
-			<a href="" class="col-md-3">
-				<div class="row">
-					<div class="col-md-6 col-sm-4 col-xs-4">
-						<img src="../img/img1.png" alt="Article image" class="md-image" >
+				<a href="" class="col-md-3">
+					<div class="row">
+						<div class="col-md-6 col-sm-4 col-xs-4">
+							<img src="../img/img1.png" alt="Article image" class="md-image" >
+						</div>
+						<div class="col-md-6 col-sm-8 col-xs-8 sm-title-container no-padding">
+							<small class="column category-outlined">Kolumne</small>
+							<h5 class="sm-title">Organizatori Diplomatskog bazara uručili 130.000 KM</h5>
+						</div>
 					</div>
-					<div class="col-md-6 col-sm-8 col-xs-8 sm-title-container no-padding">
-						<small class="column category-outlined">Kolumne</small>
-						<h5 class="sm-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h5>
-					</div>
-				</div>
-			</a>
+				</a>
 
-			<a href="" class="col-md-3">
-				<div class="row">
-					<div class="col-md-6 col-sm-4 col-xs-4">
-						<img src="../img/img1.png" alt="Article image" class="md-image" >
+				<a href="" class="col-md-3">
+					<div class="row">
+						<div class="col-md-6 col-sm-4 col-xs-4">
+							<img src="../img/img1.png" alt="Article image" class="md-image" >
+						</div>
+						<div class="col-md-6 col-sm-8 col-xs-8 sm-title-container no-padding">
+							<small class="column category-outlined">Kolumne</small>
+							<h5 class="sm-title">Organizatori Diplomatskog bazara uručili 130.000 KM</h5>
+							
+						</div>
 					</div>
-					<div class="col-md-6 col-sm-8 col-xs-8 sm-title-container no-padding">
-						<small class="column category-outlined">Kolumne</small>
-						<h5 class="sm-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h5>
-						
-					</div>
-				</div>
-			</a>
+				</a>
 
-			<a href="" class="col-md-3">
-				<div class="row">
-					<div class="col-md-6 col-sm-4 col-xs-4">
-						<img src="../img/img1.png" alt="Article image" class="md-image" >
+				<a href="" class="col-md-3">
+					<div class="row">
+						<div class="col-md-6 col-sm-4 col-xs-4">
+							<img src="../img/img1.png" alt="Article image" class="md-image" >
+						</div>
+						<div class="col-md-6 col-sm-8 col-xs-8 sm-title-container no-padding">
+							<small class="column category-outlined">Kolumne</small>
+							<h5 class="sm-title">Organizatori Diplomatskog bazara uručili 130.000 KM</h5>
+							
+						</div>
 					</div>
-					<div class="col-md-6 col-sm-8 col-xs-8 sm-title-container no-padding">
-						<small class="column category-outlined">Kolumne</small>
-						<h5 class="sm-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h5>
-						
-					</div>
-				</div>
-			</a>
-		</section>
+				</a>
+			</section>
 		</div>	
 	</div>
 
 	<!-- Main Content Container -->
-	<div class="container">
+	<div id="main-content-container" class="container">
 		<!-- Top Story Section -->
 		<section class="row">
 			<!-- Top story article -->
@@ -153,7 +177,7 @@
 						<img src="../img/img1.png" alt="Article image" class="huge-image">
 
 						<div class="top-story-title-container">
-							<small class="top-story category-filled">Top priča</small>
+							<small class="top-story-tag category-filled">Top priča</small>
 							<h3 class="bg-title-inverse">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h3>
 							<ul class="time-comments-container">
 								<li><small class="small-txt-inverse"><span class="glyphicon glyphicon-time"></span>09. Februar</small></li>
@@ -172,7 +196,7 @@
 							<img src="../img/img1.png" alt="Article image" class="md-top-image">
 
 							<div class="top-story-title-container">
-								<small class="top-story category-filled">Top priča</small>
+								<small class="top-story-tag category-filled">Top priča</small>
 								<h4 class="md-title-inverse">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h4>
 								<ul class="time-comments-container">
 									<li><small class="small-txt-inverse"><span class="glyphicon glyphicon-time"></span>Prije 20 minuta</small></li>
@@ -186,7 +210,7 @@
 							<img src="../img/img1.png" alt="Article image" class="md-top-image">
 
 							<div class="top-story-title-container">
-								<small class="top-story category-filled">Top priča</small>
+								<small class="top-story-tag category-filled">Top priča</small>
 								<h4 class="md-title-inverse">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h4>
 								<ul class="time-comments-container">
 									<li><small class="small-txt-inverse"><span class="glyphicon glyphicon-time"></span>Prije 20 minuta</small></li>
@@ -202,7 +226,7 @@
 							<img src="../img/img1.png" alt="Article image" class="md-top-image">
 
 							<div class="top-story-title-container">
-								<small class="top-story category-filled">Top priča</small>
+								<small class="top-story-tag category-filled">Top priča</small>
 								<h4 class="md-title-inverse">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h4>
 								<ul class="time-comments-container">
 									<li><small class="small-txt-inverse"><span class="glyphicon glyphicon-time"></span>Prije 20 minuta</small></li>
@@ -217,7 +241,7 @@
 							<img src="../img/img1.png" alt="Article image" class="md-top-image">
 
 							<div class="top-story-title-container">
-								<small class="top-story category-filled">Top priča</small>
+								<small class="top-story-tag category-filled">Top priča</small>
 								<h4 class="md-title-inverse">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h4>
 								<ul class="time-comments-container">
 									<li><small class="small-txt-inverse"><span class="glyphicon glyphicon-time"></span>Prije 20 minuta</small></li>
@@ -233,16 +257,16 @@
 		<!-- Politics Section -->
 		<!-- Category header -->
 		<div class="row">
-			<div class="category-header-container col-md-9 col-sm-7 col-xs-12 world_region clearfix">
+			<div class="category-header-container col-md-9 col-sm-7 col-xs-12 politics clearfix">
 				<ul>
-					<li style="float: left;"><h4><b>Politika</b></h4></li>
-					<li class="category-active world_region"><h5>Regija</h5></li>
-					<li class="category-active world_region"><h5>BiH</h5></li>
-					<li class="category-active world_region"><h5>Svijet</h5></li>
+					<li style="float: left;"><h4><b><a href="#" class="politics">Politika</a></b></h4></li>
+					<li class="hidden-xs"><h5><a href="#" class="politics">Regija</a></h5></li>
+					<li class="hidden-xs"><h5><a href="#" class="politics">BiH</a></h5></li>
+					<li class="hidden-xs"><h5><a href="#" class="politics">Svijet</a></h5></li>
 				</ul>
 				<div class="separator-full clearfix"></div>
 			</div>
-			<div class="category-header-container col-md-3 col-sm-5 hidden-xs world_region clearfix">
+			<div class="category-header-container col-md-3 col-sm-5 hidden-xs politics clearfix">
 				<ul>
 					<li style="float: left; margin-bottom: 2px;"><h4><b>Najčitanije</b></h4></li>
 				</ul>
@@ -256,7 +280,7 @@
 					<img src="../img/img1.png" alt="Article image" class="big-image">
 					
 					<div class="big-title-container">
-						<small class="world_region category-outlined">BiH</small>
+						<small class="politics category-outlined">BiH</small>
 						<h2 class="bg-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h2>
 						<p class="preview">Organizacioni odbor Diplomatskog bazara 2016 danas je dodijelio 130.000 KM dobrotvornim organizacijama za djecu s potrebama iz Bosne i Hercegovine i to je do sada najveći prikupljeni iznos.</p>
 
@@ -278,7 +302,7 @@
 							<img src="../img/img1.png" alt="Article image" class="md-image">
 						</div>
 						<div class="col-md-9 col-sm-8 col-xs-8 md-title-container">
-							<small class="world_region category-outlined">BiH</small>
+							<small class="politics category-outlined">BiH</small>
 							<h4 class="md-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h4>
 							
 							<ul class="time-comments-container">
@@ -295,7 +319,7 @@
 							<img src="../img/img1.png" alt="Article image" class="md-image">
 						</div>
 						<div class="col-md-9 col-sm-8 col-xs-8 md-title-container">
-							<small class="world_region category-outlined">BiH</small>
+							<small class="politics category-outlined">BiH</small>
 							<h4 class="md-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h4>
 							
 							<ul class="time-comments-container">
@@ -311,7 +335,7 @@
 							<img src="../img/img1.png" alt="Article image" class="md-image">
 						</div>
 						<div class="col-md-9 col-sm-8 col-xs-8 md-title-container">
-							<small class="world_region category-outlined">BiH</small>
+							<small class="politics category-outlined">BiH</small>
 							<h4 class="md-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h4>
 							
 							<ul class="time-comments-container">
@@ -327,7 +351,7 @@
 							<img src="../img/img1.png" alt="Article image" class="md-image">
 						</div>
 						<div class="col-md-9 col-sm-8 col-xs-8 md-title-container">
-							<small class="world_region category-outlined">BiH</small>
+							<small class="politics category-outlined">BiH</small>
 							<h4 class="md-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h4>
 							
 							<ul class="time-comments-container">
@@ -343,7 +367,7 @@
 							<img src="../img/img1.png" alt="Article image" class="md-image">
 						</div>
 						<div class="col-md-9 col-sm-8 col-xs-8 md-title-container">
-							<small class="world_region category-outlined">BiH</small>
+							<small class="politics category-outlined">BiH</small>
 							<h4 class="md-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h4>
 							
 							<ul class="time-comments-container">
@@ -363,7 +387,7 @@
 				<a href="">
 					<div class="row">
 						<div class="col-xs-12">
-							<small class="world_region category-outlined">BiH</small>
+							<small class="politics category-outlined">BiH</small>
 							<h5 class="md-title">Koridor 5C kroz Hercegovinu: Ratnom linijom razgraničenja i protiv interesa stanovništva</h5>
 
 							<ul class="time-comments-container">
@@ -378,7 +402,7 @@
 				<a href="">
 					<div class="row">
 						<div class="col-xs-12">
-							<small class="world_region category-outlined">BiH</small>
+							<small class="politics category-outlined">BiH</small>
 							<h5 class="md-title">Koridor 5C kroz Hercegovinu: Ratnom linijom razgraničenja i protiv interesa stanovništva</h5>
 
 							<ul class="time-comments-container">
@@ -393,7 +417,7 @@
 				<a href="">
 					<div class="row">
 						<div class="col-xs-12">
-							<small class="world_region category-outlined">BiH</small>
+							<small class="politics category-outlined">BiH</small>
 							<h5 class="md-title">Koridor 5C kroz Hercegovinu: Ratnom linijom razgraničenja i protiv interesa stanovništva</h5>
 
 							<ul class="time-comments-container">
@@ -408,7 +432,7 @@
 				<a href="">
 					<div class="row">
 						<div class="col-xs-12">
-							<small class="world_region category-outlined">BiH</small>
+							<small class="politics category-outlined">BiH</small>
 							<h5 class="md-title">Koridor 5C kroz Hercegovinu: Ratnom linijom razgraničenja i protiv interesa stanovništva</h5>
 
 							<ul class="time-comments-container">
@@ -427,11 +451,11 @@
 		<div class="row">
 			<div class="category-header-container col-md-9 col-sm-7 col-xs-12 sport clearfix">
 				<ul>
-					<li style="float: left;"><h4><b>Sport</b></h4></li>
-					<li class="category-active sport"><h5>Ostalo</h5></li>
-					<li class="category-inactive grey"><h5>Zimski sportovi</h5></li>
-					<li class="category-active sport"><h5>Košarka</h5></li>
-					<li class="category-active sport"><h5>Fudbal</h5></li>
+					<li style="float: left;"><h4><b><a href="#" class="sport">Sport</a></b></h4></li>
+					<li class="hidden-xs"><h5><a href="#" class="sport">Ostalo</a></h5></li>
+					<li class="hidden-xs"><h5><a href="#" class="sport">Zimski sportovi</a></h5></li>
+					<li class="hidden-xs"><h5><a href="#" class="sport">Košarka</a></h5></li>
+					<li class="hidden-xs"><h5><a href="#" class="sport">Fudbal</a></h5></li>
 				</ul>
 				<div class="separator-full clearfix"></div>
 			</div>
@@ -472,7 +496,7 @@
 						</div>
 						<div class="col-md-9  col-xs-8 md-title-container">
 							<small class="sport category-outlined">NOGOMET</small>
-							<h5 class="md-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h5>
+							<h4 class="md-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h4>
 							
 							<ul class="time-comments-container">
 								<li><small><span class="glyphicon glyphicon-time"></span>09. Februar</small></li>
@@ -489,7 +513,7 @@
 						</div>
 						<div class="col-md-9  col-xs-8 md-title-container">
 							<small class="sport category-outlined">NOGOMET</small>
-							<h5 class="md-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h5>
+							<h4 class="md-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h4>
 							
 							<ul class="time-comments-container">
 								<li><small><span class="glyphicon glyphicon-time"></span>09. Februar</small></li>
@@ -506,7 +530,7 @@
 						</div>
 						<div class="col-md-9  col-xs-8 md-title-container">
 							<small class="sport category-outlined">NOGOMET</small>
-							<h5 class="md-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h5>
+							<h4 class="md-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h4>
 							
 							<ul class="time-comments-container">
 								<li><small><span class="glyphicon glyphicon-time"></span>09. Februar</small></li>
@@ -523,7 +547,7 @@
 						</div>
 						<div class="col-md-9  col-xs-8 md-title-container">
 							<small class="sport category-outlined">NOGOMET</small>
-							<h5 class="md-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h5>
+							<h4 class="md-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h4>
 							
 							<ul class="time-comments-container">
 								<li><small><span class="glyphicon glyphicon-time"></span>09. Februar</small></li>
@@ -540,7 +564,7 @@
 						</div>
 						<div class="col-md-9  col-xs-8 md-title-container">
 							<small class="sport category-outlined">NOGOMET</small>
-							<h5 class="md-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h5>
+							<h4 class="md-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h4>
 							
 							<ul class="time-comments-container">
 								<li><small><span class="glyphicon glyphicon-time"></span>09. Februar</small></li>
@@ -560,7 +584,7 @@
 				<a href="">
 					<div class="row">
 						<div class="col-xs-12">
-							<div class="sport category-outlined"><small>NOGOMET</small></div>
+							<small class="sport category-outlined">NOGOMET</small>
 							<h5 class="md-title">Koridor 5C kroz Hercegovinu: Ratnom linijom razgraničenja i protiv interesa stanovništva</h5>
 
 							<ul class="time-comments-container">
@@ -575,7 +599,7 @@
 				<a href="">
 					<div class="row">
 						<div class="col-xs-12">
-							<div class="sport category-outlined"><small>NOGOMET</small></div>
+							<small class="sport category-outlined">NOGOMET</small>
 							<h5 class="md-title">Koridor 5C kroz Hercegovinu: Ratnom linijom razgraničenja i protiv interesa stanovništva</h5>
 
 							<ul class="time-comments-container">
@@ -590,7 +614,7 @@
 				<a href="">
 					<div class="row">
 						<div class="col-xs-12">
-							<div class="sport category-outlined"><small>NOGOMET</small></div>
+							<small class="sport category-outlined">NOGOMET</small>
 							<h5 class="md-title">Koridor 5C kroz Hercegovinu: Ratnom linijom razgraničenja i protiv interesa stanovništva</h5>
 
 							<ul class="time-comments-container">
@@ -605,7 +629,7 @@
 				<a href="">
 					<div class="row">
 						<div class="col-xs-12">
-							<div class="sport category-outlined"><small>NOGOMET</small></div>
+							<small class="sport category-outlined">NOGOMET</small>
 							<h5 class="md-title">Koridor 5C kroz Hercegovinu: Ratnom linijom razgraničenja i protiv interesa stanovništva</h5>
 
 							<ul class="time-comments-container">
@@ -625,27 +649,27 @@
 		<div class="row">
 			<div class="category-header-container col-md-12 col-sm-12 col-xs-12 lifestyle clearfix">
 				<ul>
-					<li style="float: left;"><h4><b>Lifestyle</b></h4></li>
-					<li class="category-active lifestyle"><h5>Kultura</h5></li>
-					<li class="category-active lifestyle"><h5>Muzika</h5></li>
-					<li class="category-active lifestyle"><h5>Film</h5></li>
-					<li class="category-active lifestyle"><h5>Moda i ljepota</h5></li>
-					<li class="category-active lifestyle"><h5>Zdravlje</h5></li>
+					<li style="float: left;"><h4><b><a href="#" class="lifestyle">Lifestyle</a></b></h4></li>
+					<li class="hidden-xs"><h5><a href="#" class="lifestyle">Kultura</a></h5></li>
+					<li class="hidden-xs"><h5><a href="#" class="lifestyle">Muzika</a></h5></li>
+					<li class="hidden-xs"><h5><a href="#" class="lifestyle">Film</a></h5></li>
+					<li class="hidden-xs"><h5><a href="#" class="lifestyle">Moda i ljepota</a></h5></li>
+					<li class="hidden-xs"><h5><a href="#" class="lifestyle">Zdravlje</a></h5></li>
 				</ul>
 				<div class="separator-full clearfix"></div>
 			</div>
 		</div>
 		<section class="row">
 			<!-- Large article -->
-			<article class="article-big col-md-4 col-sm-4 hidden-xs">
+			<article class="article-4-col col-md-4 col-sm-4">
 				<a href="">
-					<img src="../img/img1.png" alt="Article image" class="big-image">
+					<img src="../img/img1.png" alt="Article image" class="big-image-4-col">
 					
 					<div class="big-title-container">
-						<div class="lifestyle category-outlined"><small>ZDRAVLJE</small></div>
-						<h2 class="bg-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h2>
+						<small class="lifestyle category-outlined">ZDRAVLJE</small>
+						<h2 class="bg-title-4-col">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h2>
 						
-						<div class="separator-200" "></div>
+						<div class="separator-200"></div>
 
 						<ul class="time-comments-container">
 							<li><small><span class="glyphicon glyphicon-time"></span>09. Februar</small></li>
@@ -656,15 +680,15 @@
 			</article>
 
 			<!-- Large article -->
-			<article class="article-big col-md-4 col-sm-4 col-xs-12">
+			<article class="article-4-col col-md-4 col-sm-4 col-xs-12">
 				<a href="">
-					<img src="../img/img1.png" alt="Article image" class="big-image">
+					<img src="../img/img1.png" alt="Article image" class="big-image-4-col">
 					
 					<div class="big-title-container">
-						<div class="lifestyle category-outlined"><small>ZDRAVLJE</small></div>
-						<h2 class="bg-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h2>
+						<small class="lifestyle category-outlined">ZDRAVLJE</small>
+						<h2 class="bg-title-4-col">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h2>
 						
-						<div class="separator-200" "></div>
+						<div class="separator-200"></div>
 
 						<ul class="time-comments-container">
 							<li><small><span class="glyphicon glyphicon-time"></span>09. Februar</small></li>
@@ -675,15 +699,15 @@
 			</article>
 
 			<!-- Large article -->
-			<article class="article-big col-md-4 col-sm-4 col-xs-12">
+			<article class="article-4-col col-md-4 col-sm-4 col-xs-12">
 				<a href="">
-					<img src="../img/img1.png" alt="Article image" class="big-image">
+					<img src="../img/img1.png" alt="Article image" class="big-image-4-col">
 					
 					<div class="big-title-container">
-						<div class="lifestyle category-outlined"><small>ZDRAVLJE</small></div>
-						<h2 class="bg-title">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h2>
+						<small class="lifestyle category-outlined">ZDRAVLJE</small>
+						<h2 class="bg-title-4-col">Organizatori Diplomatskog bazara uručili 130.000 KM za pomoć djeci u BiH</h2>
 						
-						<div class="separator-200" "></div>
+						<div class="separator-200"></div>
 
 						<ul class="time-comments-container">
 							<li><small><span class="glyphicon glyphicon-time"></span>09. Februar</small></li>
@@ -710,12 +734,16 @@
 					<li><a href="#">Uslovi korištenja</a></li>
 				</ul>
 
-				<ul class="nav navbar-nav navbar-right hidden-xs">
+				<ul class="nav navbar-nav navbar-right hidden-xs hidden-sm">
 					<li><a href="#"><span class="icon-facebook-with-circle"></span></a></li>
 					<li><a href="#"><span class="icon-twitter-with-circle"></span></a></li>
 				</ul>
-			</div>
 		</nav>
+		<div class="copyright-container">
+			<div class="container">
+				<p>&copy;&nbsp;Copyright 2017 Post Scriptum - Sva prava zadržana.</p>
+			</div>
+		</div>
 	</footer>
 
 	<!-- Additional JavaScript files -->
