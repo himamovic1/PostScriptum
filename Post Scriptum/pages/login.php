@@ -73,7 +73,7 @@
 			<div class="col-md-3 col-sm-2 hidden-xs"></div>
 
 			<div class="col-md-6 col-sm-8 col-xs-12">
-				<div class="registration-container panel-shadow">
+				<div class="registration-container panel-shadow text-center">
 					<div class="form-group">
 						<h2 class="bg-title text-center">Prijava na portal</h2>
 						<p class="text-center">Hvala Vam što koristite Post Scriptum</p>
@@ -148,6 +148,9 @@
 							<div class="col-md-3 col-sm-2 hidden-xs"></div>	
 						</div>
 					</form>
+					<div class="separator-full clearfix"></div>
+					<h4>Još uvijek nemate korisnički račun?</h4>
+					<a href="registracija.php" style="color: #1c87a5;">Kreiraj račun</a>
 				</div>		
 			</div>
 

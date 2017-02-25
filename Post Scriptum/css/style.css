@@ -88,7 +88,7 @@ html, body {
 	/*height: 100%; */
 	font-family: 'Roboto', sans-serif;
 	letter-spacing: .2px;
-	background-color: #fafafa;
+	background-color: #fdfdfd;
 }
 
 header {
@@ -152,6 +152,7 @@ textarea:focus, input:focus{
 
 .separator-full {
 	border-bottom: 1px solid #ccc;
+	margin: .8em 0;
 }
 
 .separator-200 {
@@ -233,7 +234,7 @@ button.dropdown-toggle {
 }
 
 .category-header-container {
-	margin-bottom: 1em;
+	
 }
 
 .category-header-container ul li {
@@ -258,6 +259,7 @@ button.dropdown-toggle {
 .article-md a {
 
 } 
+.article-big {margin-bottom: 10px;}
 
 .article-4-col {
 	margin-bottom: 1em;
@@ -287,7 +289,6 @@ article[class^='article-']:hover {
 	min-width: 100%;
 	min-height: 300px;
 	object-fit: cover;
-	margin-bottom: 0.7em;
 }
 
 .huge-image {
@@ -296,7 +297,6 @@ article[class^='article-']:hover {
 	min-width: auto;
 	min-height: 300px;
 	object-fit: cover;
-	margin-bottom: 0.7em;
 }
 
 .big-image {
@@ -305,7 +305,6 @@ article[class^='article-']:hover {
 	min-width: auto;
 	min-height: 300px;
 	object-fit: cover;
-	margin-bottom: 0.7em;
 }
 
 .big-image-4-col {
@@ -314,7 +313,6 @@ article[class^='article-']:hover {
 	min-width: auto;
 	min-height: 220px;
 	object-fit: cover;
-	margin-bottom: 0.8em;
 }
 
 .md-image {
@@ -324,6 +322,37 @@ article[class^='article-']:hover {
 	min-height: 110px;
 	object-fit: cover;
 	margin-bottom: 5px;
+}
+
+.img-wrapper {
+	display: block;
+	overflow: hidden;
+    margin-bottom: 0.7em;
+}
+
+.md-top-image, .huge-image, .big-image, .big-image-4-col {
+	-moz-transition: all 0.4s ease;
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	vertical-align: middle;
+}
+
+.article-big:hover img , .top-story-container:hover img, .article-4-col:hover img  {
+	-webkit-transform:scale(1.03); /* Safari and Chrome */
+    -moz-transform:scale(1.03); /* Firefox */
+    -ms-transform:scale(1.03); /* IE 9 */
+    -o-transform:scale(1.03); /* Opera */
+    transform:scale(1.03);
+}
+
+.article-big:hover .bg-title, .article-md:hover .md-title, .article-sm:hover .md-title, .article-4-col:hover .bg-title-4-col {
+	color: #1c87a5;
+}
+
+.article-big .bg-title, .article-md .md-title, .article-sm .md-title, .article-4-col .bg-title-4-col  {
+	-moz-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
 }
 
 .btn-grey-outlined {
@@ -399,7 +428,7 @@ article[class^='article-']:hover {
 
 .top-story-title-container {
 	position: absolute; 
-	bottom: 10px; 
+	bottom: 0; 
 	padding: 1.2em 1.3em;
 
 	background: transparent; /* For browsers that do not support gradients */
@@ -724,6 +753,13 @@ small[class^='help-block'] {
     background:transparent;
 }
 
+.navbar-nav>li>a {
+    font-size: 15px;
+    line-height: 30px;
+}
+.navbar-fixed-top .navbar-collapse {
+	max-height: unset;
+}
 /* ---------------------------------------------- */
 /* ---------------- Devices Grid ---------------- */
 /* ---------------------------------------------- */
@@ -734,7 +770,6 @@ small[class^='help-block'] {
 		min-width: 200px;
 		min-height: 200px;
 		object-fit: cover;
-		margin-bottom: 0.7em;
 	}
 	.huge-image {
 		max-width: 100%; 
@@ -742,7 +777,6 @@ small[class^='help-block'] {
 		min-width: 408px;
 		min-height: 410px;
 		object-fit: cover;
-		margin-bottom: 0.7em;
 	}
 	.big-image {
 		max-width: 100%; 
@@ -750,7 +784,6 @@ small[class^='help-block'] {
 		min-width: 408px;
 		min-height: 385px;
 		object-fit: cover;
-		margin-bottom: 0.7em;
 	}
 	.big-image-4-col {
 		max-width: 100%; 
@@ -758,7 +791,6 @@ small[class^='help-block'] {
 		min-width: 230px;
 		min-height: 220px;
 		object-fit: cover;
-		margin-bottom: 0.7em;
 	}
 	.md-image {
 		max-width: 100%; 
@@ -777,6 +809,10 @@ small[class^='help-block'] {
 	  font-size: 1.2em;
 	}
 	.fix-margin-right { margin-right: 0; }
+	.navbar-nav>li>a {
+	    font-size: 14px;
+	    line-height: 20px;
+	}
 }
 @media (min-width: 768px) and (max-width: 991px) {
 	.navbar-nav .open .dropdown-menu {
@@ -864,7 +900,6 @@ small[class^='help-block'] {
 		min-width: 200px;
 		min-height: 220px;
 		object-fit: cover;
-		margin-bottom: 0.7em;
 	}
 	.huge-image {
 		max-width: 100%; 
@@ -872,7 +907,6 @@ small[class^='help-block'] {
 		min-width: 400px;
 		min-height: 450px;
 		object-fit: cover;
-		margin-bottom: 0.7em;
 	}
 	.big-image {
 		max-width: 100%; 
@@ -880,7 +914,6 @@ small[class^='help-block'] {
 		min-width: 280px;
 		min-height: 265px;
 		object-fit: cover;
-		margin-bottom: 0.7em;
 	}
 	.md-title-container {
 		padding-right: 0px;
